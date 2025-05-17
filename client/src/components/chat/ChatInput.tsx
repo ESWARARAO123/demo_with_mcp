@@ -13,6 +13,8 @@ import { chatInputStyles } from './chatStyles';
 import FileUploadButton from './FileUploadButton';
 import FilePreview from './FilePreview';
 import './ChatInput.css';
+import { config } from '../../config';
+import { chat2sqlService } from '../../services/chat2sqlService';
 
 interface ChatInputProps {
   onSendMessage: (message: string, file?: File) => void;
@@ -42,59 +44,93 @@ const ChatInput: React.FC<ChatInputProps> = ({
   const [input, setInput] = useState('');
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+  const [chat2sqlEnabled, setChat2sqlEnabled] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  // Focus input when component mounts or loading state changes
   useEffect(() => {
     if (!isLoading && !isUploading) {
       inputRef.current?.focus();
     }
   }, [isLoading, isUploading]);
 
-  // Auto-resize textarea based on content
   useEffect(() => {
     const textarea = inputRef.current;
     if (textarea) {
-      // Reset height to auto to get the correct scrollHeight
       textarea.style.height = 'auto';
-      // Set the height to scrollHeight to fit the content
       textarea.style.height = `${Math.min(textarea.scrollHeight, 150)}px`;
     }
   }, [input]);
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-
-    // Only proceed if there's text (file uploads use auto-upload now)
-    if (input.trim() === '' || isLoading || isUploading) return;
-
-    onSendMessage(input.trim());
-    setInput('');
+    handleSend();
   };
 
   const handleKeyDown = (e: React.KeyboardEvent) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
-      handleSubmit(e);
+      handleSend();
     }
   };
 
   const handleFileSelect = (file: File) => {
     setSelectedFile(file);
-    // File is not automatically uploaded here anymore
-    // Instead, we'll show it in the preview with an upload button
   };
 
   const handleAutoUpload = (file: File) => {
-    // Directly trigger the upload with empty message
     onSendMessage('', file);
-    // The file will be cleared after successful upload in the parent component
   };
 
   const handleRemoveFile = () => {
     setSelectedFile(null);
   };
 
-  // Only show manual upload button if auto-upload is disabled and a file is selected
+  const handleToggle = () => setChat2sqlEnabled((prev) => !prev);
+
+  const handleSend = async () => {
+    if (!input.trim()) return;
+    
+    if (chat2sqlEnabled) {
+      setLoading(true);
+      try {
+        // Send user's message first (this will appear on the right)
+        onSendMessage(`[USER] ${input.trim()}`);
+        
+        // Execute the query through the API endpoint
+        const result = await chat2sqlService.executeQuery(input.trim());
+        
+        if (result.sql && result.data) {
+          // Format the SQL query and results
+          let message = `[SYSTEM] \`\`\`sql\n${result.sql}\n\`\`\``;
+          
+          if (result.data.length > 0) {
+            const header = result.columns.join(" | ");
+            const separator = result.columns.map(() => "---").join(" | ");
+            const rows = result.data
+              .map((row: any) => result.columns.map(col => row[col]).join(" | "))
+              .join("\n");
+            message += `\n\n${header}\n${separator}\n${rows}`;
+          } else {
+            message += "\n\nNo results found.";
+          }
+          
+          // Send the formatted response as a system message (this will appear on the left)
+          onSendMessage(message);
+        } else if (result.detail) {
+          onSendMessage(`[SYSTEM] Error: ${result.detail}`);
+        }
+      } catch (err) {
+        onSendMessage(`[SYSTEM] Error: ${err instanceof Error ? err.message : String(err)}`);
+      } finally {
+        setLoading(false);
+      }
+    } else {
+      // Only use model if Chat2SQL is disabled
+      onSendMessage(input.trim());
+    }
+    setInput("");
+  };
+
   const showManualUploadButton = selectedFile && !isUploading && !isLoading;
 
   return (
@@ -105,13 +141,12 @@ const ChatInput: React.FC<ChatInputProps> = ({
         width: isEmpty ? '90vw' : '100%',
         transform: 'none',
         transition: 'all 0.3s ease',
-        zIndex: 10, // Ensure it's above other elements
+        zIndex: 10,
         boxShadow: '0 4px 20px rgba(0, 0, 0, 0.15)',
         border: '1px solid var(--color-border)',
         marginTop: isEmpty ? '20px' : '0'
       }}
     >
-      {/* File preview area */}
       {selectedFile && (
         <div style={chatInputStyles.filePreviewContainer}>
           <FilePreview
@@ -119,7 +154,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
             onRemove={handleRemoveFile}
             uploadProgress={isUploading ? uploadProgress : undefined}
           />
-
           {showManualUploadButton && (
             <button
               type="button"
@@ -146,7 +180,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
       )}
 
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-        {/* Main input row with textarea and send button */}
         <div style={{
           ...chatInputStyles.inputRow,
           backgroundColor: 'rgba(255, 255, 255, 0.05)',
@@ -176,7 +209,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
             disabled={isLoading || isUploading}
           />
 
-          {/* Send/Stop button */}
           <div style={{ marginLeft: '0.5rem' }}>
             {isStreaming ? (
               <button
@@ -210,7 +242,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
           </div>
         </div>
 
-        {/* Buttons row below the input */}
         <div
           style={{
             display: 'flex',
@@ -224,7 +255,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
           }}
           className="hide-scrollbar"
         >
-          {/* File upload button */}
           <FileUploadButton
             onFileSelect={handleFileSelect}
             onAutoUpload={handleAutoUpload}
@@ -234,7 +264,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
             disabled={isStreaming}
           />
 
-          {/* RAG toggle button - always show but disable if not available */}
           <button
             type="button"
             onClick={onToggleRag}
@@ -251,6 +280,23 @@ const ChatInput: React.FC<ChatInputProps> = ({
           >
             <DocumentTextIcon className="h-4 w-4 mr-1" />
             RAG
+          </button>
+
+          <button
+            type="button"
+            onClick={handleToggle}
+            style={{
+              ...chatInputStyles.ragToggleButton,
+              ...(chat2sqlEnabled ? chatInputStyles.ragToggleEnabled : chatInputStyles.ragToggleDisabled),
+              opacity: chat2sqlEnabled ? 1 : 0.6,
+              cursor: 'pointer',
+            }}
+            className="hover:bg-opacity-90 transition-all"
+            aria-label="Convert chat to SQL"
+            title="Convert chat to SQL"
+          >
+            <DocumentTextIcon className="h-4 w-4 mr-1" />
+            Chat2SQL
           </button>
         </div>
       </form>

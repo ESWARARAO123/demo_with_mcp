@@ -1,0 +1,12 @@
+fastapi==0.68.1
+uvicorn==0.15.0
+sqlalchemy==1.4.23
+psycopg2-binary
+python-dotenv==0.19.0
+openai
+numpy==1.19.5
+pandas
+matplotlib==3.3.4
+ollama
+python-multipart>=0.0.5
+pydantic

@@ -15653,3 +15653,782 @@ You can access the server at: [0;32mhttp://localhost:8080[0m
 2025-05-12 15:46:36 info: Loaded Ollama settings from database
 2025-05-12 16:13:43 info: Available columns in user_mcp_server_configurations for getUserMCPServerConfigurations: id, user_id, ssh_configuration_id, mcp_port, mcp_discovered_tools_schema, is_default, created_at, updated_at, mcp_nickname, mcp_host, mcp_server_version, mcp_connection_status, mcp_last_error_message
 2025-05-12 16:13:45 info: Available columns in user_mcp_server_configurations for getUserMCPServerConfigurations: id, user_id, ssh_configuration_id, mcp_port, mcp_discovered_tools_schema, is_default, created_at, updated_at, mcp_nickname, mcp_host, mcp_server_version, mcp_connection_status, mcp_last_error_message
+2025-05-15 13:49:07 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-15 13:49:10 info: Loaded Ollama settings from database
+2025-05-15 13:49:10 info: OllamaService initialized
+2025-05-15 15:30:27 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-15 15:30:28 info: Loaded Ollama settings from database
+2025-05-15 15:30:28 info: OllamaService initialized
+2025-05-16 10:40:35 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:40:36 info: Loaded Ollama settings from database
+2025-05-16 10:40:36 info: OllamaService initialized
+2025-05-16 10:40:57 info: Loaded Ollama settings from database
+2025-05-16 10:40:57 info: OllamaService initialized
+2025-05-16 10:40:57 info: RAG: OllamaService initialized successfully
+2025-05-16 10:46:17 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:46:17 info: Loaded Ollama settings from database
+2025-05-16 10:46:17 info: OllamaService initialized
+2025-05-16 10:46:36 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:46:37 info: Loaded Ollama settings from database
+2025-05-16 10:46:37 info: OllamaService initialized
+2025-05-16 10:46:49 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:46:49 info: Loaded Ollama settings from database
+2025-05-16 10:46:49 info: OllamaService initialized
+2025-05-16 10:47:09 info: Loaded Ollama settings from database
+2025-05-16 10:47:09 info: OllamaService initialized
+2025-05-16 10:47:09 info: RAG: OllamaService initialized successfully
+2025-05-16 10:47:37 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:47:37 info: Loaded Ollama settings from database
+2025-05-16 10:47:37 info: OllamaService initialized
+2025-05-16 10:47:51 info: Loaded Ollama settings from database
+2025-05-16 10:47:51 info: OllamaService initialized
+2025-05-16 10:47:51 info: RAG: OllamaService initialized successfully
+2025-05-16 10:51:00 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:51:01 info: Loaded Ollama settings from database
+2025-05-16 10:51:01 info: OllamaService initialized
+2025-05-16 10:51:02 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:51:03 info: Loaded Ollama settings from database
+2025-05-16 10:51:03 info: OllamaService initialized
+2025-05-16 10:51:09 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:51:09 info: Loaded Ollama settings from database
+2025-05-16 10:51:09 info: OllamaService initialized
+2025-05-16 10:51:26 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 10:51:26 info: Loaded Ollama settings from database
+2025-05-16 10:51:26 info: OllamaService initialized
+2025-05-16 10:51:39 info: Loaded Ollama settings from database
+2025-05-16 10:51:39 info: OllamaService initialized
+2025-05-16 10:51:39 info: RAG: OllamaService initialized successfully
+2025-05-16 11:25:54 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 11:25:54 info: Loaded Ollama settings from database
+2025-05-16 11:25:54 info: OllamaService initialized
+2025-05-16 11:26:09 info: Loaded Ollama settings from database
+2025-05-16 11:26:09 info: OllamaService initialized
+2025-05-16 11:26:09 info: RAG: OllamaService initialized successfully
+2025-05-16 11:26:28 info: Available columns in user_mcp_server_configurations for getUserMCPServerConfigurations: id, user_id, ssh_configuration_id, mcp_port, mcp_discovered_tools_schema, is_default, created_at, updated_at, mcp_nickname, mcp_host, mcp_server_version, mcp_connection_status, mcp_last_error_message
+2025-05-16 11:28:15 info: Deleting RAG data for session 861d77a0-72e9-44c5-855b-015234cc51cf requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 11:28:15 info: RAG data deletion result for session 861d77a0-72e9-44c5-855b-015234cc51cf: Success
+2025-05-16 11:28:15 info: Successfully deleted RAG data for session 861d77a0-72e9-44c5-855b-015234cc51cf
+2025-05-16 11:28:54 info: Loading configuration from: /home/eswar/Downloads/productdemo-mcp/conf/config.ini
+2025-05-16 11:28:54 info: Loaded Ollama settings from database
+2025-05-16 11:28:54 info: OllamaService initialized
+2025-05-16 11:29:13 info: Loaded Ollama settings from database
+2025-05-16 11:29:13 info: OllamaService initialized
+2025-05-16 11:29:13 info: RAG: OllamaService initialized successfully
+2025-05-16 11:29:34 info: Deleting RAG data for session 5484ff2e-ecfe-448a-ac44-e24082055b73 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 11:29:34 info: RAG data deletion result for session 5484ff2e-ecfe-448a-ac44-e24082055b73: Success
+2025-05-16 11:29:34 info: Successfully deleted RAG data for session 5484ff2e-ecfe-448a-ac44-e24082055b73
+2025-05-16 12:52:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 12:52:51 info: Loaded Ollama settings from database
+2025-05-16 12:52:51 info: OllamaService initialized
+2025-05-16 12:53:07 info: Loaded Ollama settings from database
+2025-05-16 12:53:07 info: OllamaService initialized
+2025-05-16 12:53:07 info: RAG: OllamaService initialized successfully
+2025-05-16 13:01:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:01:42 info: Loaded Ollama settings from database
+2025-05-16 13:01:42 info: OllamaService initialized
+2025-05-16 13:07:36 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:07:36 info: Loaded Ollama settings from database
+2025-05-16 13:07:36 info: OllamaService initialized
+2025-05-16 13:38:02 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:38:02 info: Loaded Ollama settings from database
+2025-05-16 13:38:02 info: OllamaService initialized
+2025-05-16 13:38:34 info: Loaded Ollama settings from database
+2025-05-16 13:38:34 info: OllamaService initialized
+2025-05-16 13:38:34 info: RAG: OllamaService initialized successfully
+2025-05-16 13:45:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:45:46 info: Loaded Ollama settings from database
+2025-05-16 13:45:46 info: OllamaService initialized
+2025-05-16 13:45:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:45:50 info: Loaded Ollama settings from database
+2025-05-16 13:45:50 info: OllamaService initialized
+2025-05-16 13:46:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:46:22 info: Loaded Ollama settings from database
+2025-05-16 13:46:22 info: OllamaService initialized
+2025-05-16 13:46:43 info: Loaded Ollama settings from database
+2025-05-16 13:46:43 info: OllamaService initialized
+2025-05-16 13:46:43 info: RAG: OllamaService initialized successfully
+2025-05-16 13:50:17 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:50:17 info: Loaded Ollama settings from database
+2025-05-16 13:50:17 info: OllamaService initialized
+2025-05-16 13:50:18 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:50:18 info: Loaded Ollama settings from database
+2025-05-16 13:50:18 info: OllamaService initialized
+2025-05-16 13:50:44 info: Loaded Ollama settings from database
+2025-05-16 13:50:44 info: OllamaService initialized
+2025-05-16 13:50:44 info: RAG: OllamaService initialized successfully
+2025-05-16 13:52:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:52:51 info: Loaded Ollama settings from database
+2025-05-16 13:52:51 info: OllamaService initialized
+2025-05-16 13:52:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 13:52:53 info: Loaded Ollama settings from database
+2025-05-16 13:52:53 info: OllamaService initialized
+2025-05-16 14:47:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:47:20 info: Loaded Ollama settings from database
+2025-05-16 14:47:20 info: OllamaService initialized
+2025-05-16 14:47:41 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:47:41 info: Loaded Ollama settings from database
+2025-05-16 14:47:41 info: OllamaService initialized
+2025-05-16 14:47:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:47:52 info: Loaded Ollama settings from database
+2025-05-16 14:47:52 info: OllamaService initialized
+2025-05-16 14:48:04 info: Loaded Ollama settings from database
+2025-05-16 14:48:04 info: OllamaService initialized
+2025-05-16 14:48:04 info: RAG: OllamaService initialized successfully
+2025-05-16 14:49:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:49:14 info: Loaded Ollama settings from database
+2025-05-16 14:49:14 info: OllamaService initialized
+2025-05-16 14:49:27 info: Loaded Ollama settings from database
+2025-05-16 14:49:27 info: OllamaService initialized
+2025-05-16 14:49:27 info: RAG: OllamaService initialized successfully
+2025-05-16 14:52:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:52:21 info: Loaded Ollama settings from database
+2025-05-16 14:52:21 info: OllamaService initialized
+2025-05-16 14:52:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:52:44 info: Loaded Ollama settings from database
+2025-05-16 14:52:44 info: OllamaService initialized
+2025-05-16 14:54:00 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:54:00 info: Loaded Ollama settings from database
+2025-05-16 14:54:00 info: OllamaService initialized
+2025-05-16 14:54:33 info: Loaded Ollama settings from database
+2025-05-16 14:54:33 info: OllamaService initialized
+2025-05-16 14:54:33 info: RAG: OllamaService initialized successfully
+2025-05-16 14:54:41 info: Deleting RAG data for session cd7f508b-2e74-4236-bcc0-a9be78b3fedb requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 14:54:41 info: RAG data deletion result for session cd7f508b-2e74-4236-bcc0-a9be78b3fedb: Success
+2025-05-16 14:54:41 info: Successfully deleted RAG data for session cd7f508b-2e74-4236-bcc0-a9be78b3fedb
+2025-05-16 14:54:43 info: Deleting RAG data for session c6564cbe-0f53-4bbd-9859-1fb2013be9c9 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 14:54:43 info: RAG data deletion result for session c6564cbe-0f53-4bbd-9859-1fb2013be9c9: Success
+2025-05-16 14:54:43 info: Successfully deleted RAG data for session c6564cbe-0f53-4bbd-9859-1fb2013be9c9
+2025-05-16 14:54:45 info: Deleting RAG data for session 65b31a19-a366-4f50-b6a0-9dac0ab5918f requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 14:54:45 info: RAG data deletion result for session 65b31a19-a366-4f50-b6a0-9dac0ab5918f: Success
+2025-05-16 14:54:45 info: Successfully deleted RAG data for session 65b31a19-a366-4f50-b6a0-9dac0ab5918f
+2025-05-16 14:54:48 info: Deleting RAG data for session a0ab43af-d3fe-4bf6-84a9-00e2d870b8b2 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 14:54:48 info: RAG data deletion result for session a0ab43af-d3fe-4bf6-84a9-00e2d870b8b2: Success
+2025-05-16 14:54:48 info: Successfully deleted RAG data for session a0ab43af-d3fe-4bf6-84a9-00e2d870b8b2
+2025-05-16 14:54:51 info: Deleting RAG data for session 4892b98c-963a-499f-adeb-6cbd9ad03d9c requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 14:54:51 info: RAG data deletion result for session 4892b98c-963a-499f-adeb-6cbd9ad03d9c: Success
+2025-05-16 14:54:51 info: Successfully deleted RAG data for session 4892b98c-963a-499f-adeb-6cbd9ad03d9c
+2025-05-16 14:58:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:58:43 info: Loaded Ollama settings from database
+2025-05-16 14:58:43 info: OllamaService initialized
+2025-05-16 14:58:49 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:58:49 info: Loaded Ollama settings from database
+2025-05-16 14:58:49 info: OllamaService initialized
+2025-05-16 14:59:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 14:59:16 info: Loaded Ollama settings from database
+2025-05-16 14:59:16 info: OllamaService initialized
+2025-05-16 15:00:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:00:10 info: Loaded Ollama settings from database
+2025-05-16 15:00:10 info: OllamaService initialized
+2025-05-16 15:00:57 info: Loaded Ollama settings from database
+2025-05-16 15:00:57 info: OllamaService initialized
+2025-05-16 15:00:57 info: RAG: OllamaService initialized successfully
+2025-05-16 15:05:13 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:05:13 info: Loaded Ollama settings from database
+2025-05-16 15:05:13 info: OllamaService initialized
+2025-05-16 15:05:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:05:15 info: Loaded Ollama settings from database
+2025-05-16 15:05:15 info: OllamaService initialized
+2025-05-16 15:05:48 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:05:48 info: Loaded Ollama settings from database
+2025-05-16 15:05:48 info: OllamaService initialized
+2025-05-16 15:06:09 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:06:09 info: Loaded Ollama settings from database
+2025-05-16 15:06:09 info: OllamaService initialized
+2025-05-16 15:11:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:11:23 info: Loaded Ollama settings from database
+2025-05-16 15:11:23 info: OllamaService initialized
+2025-05-16 15:11:38 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:11:38 info: Loaded Ollama settings from database
+2025-05-16 15:11:38 info: OllamaService initialized
+2025-05-16 15:11:50 info: Loaded Ollama settings from database
+2025-05-16 15:11:50 info: OllamaService initialized
+2025-05-16 15:11:50 info: RAG: OllamaService initialized successfully
+2025-05-16 15:18:35 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:18:35 info: Loaded Ollama settings from database
+2025-05-16 15:18:35 info: OllamaService initialized
+2025-05-16 15:18:38 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:18:38 info: Loaded Ollama settings from database
+2025-05-16 15:18:38 info: OllamaService initialized
+2025-05-16 15:18:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:18:50 info: Loaded Ollama settings from database
+2025-05-16 15:18:50 info: OllamaService initialized
+2025-05-16 15:18:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:18:55 info: Loaded Ollama settings from database
+2025-05-16 15:18:55 info: OllamaService initialized
+2025-05-16 15:19:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:19:22 info: Loaded Ollama settings from database
+2025-05-16 15:19:22 info: OllamaService initialized
+2025-05-16 15:19:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:19:45 info: Loaded Ollama settings from database
+2025-05-16 15:19:45 info: OllamaService initialized
+2025-05-16 15:19:59 info: Loaded Ollama settings from database
+2025-05-16 15:19:59 info: OllamaService initialized
+2025-05-16 15:19:59 info: RAG: OllamaService initialized successfully
+2025-05-16 15:20:06 info: Deleting RAG data for session fc545845-a547-465c-bf56-921746789436 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 15:20:06 info: RAG data deletion result for session fc545845-a547-465c-bf56-921746789436: Success
+2025-05-16 15:20:06 info: Successfully deleted RAG data for session fc545845-a547-465c-bf56-921746789436
+2025-05-16 15:20:09 info: Deleting RAG data for session b6cb1e9a-66a3-401b-ba56-eb3720f34b4d requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 15:20:09 info: RAG data deletion result for session b6cb1e9a-66a3-401b-ba56-eb3720f34b4d: Success
+2025-05-16 15:20:09 info: Successfully deleted RAG data for session b6cb1e9a-66a3-401b-ba56-eb3720f34b4d
+2025-05-16 15:23:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:23:14 info: Loaded Ollama settings from database
+2025-05-16 15:23:14 info: OllamaService initialized
+2025-05-16 15:23:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:23:44 info: Loaded Ollama settings from database
+2025-05-16 15:23:44 info: OllamaService initialized
+2025-05-16 15:23:57 info: Loaded Ollama settings from database
+2025-05-16 15:23:57 info: OllamaService initialized
+2025-05-16 15:23:57 info: RAG: OllamaService initialized successfully
+2025-05-16 15:39:25 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:39:25 info: Loaded Ollama settings from database
+2025-05-16 15:39:25 info: OllamaService initialized
+2025-05-16 15:39:39 info: Loaded Ollama settings from database
+2025-05-16 15:39:39 info: OllamaService initialized
+2025-05-16 15:39:39 info: RAG: OllamaService initialized successfully
+2025-05-16 15:44:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:44:46 info: Loaded Ollama settings from database
+2025-05-16 15:44:46 info: OllamaService initialized
+2025-05-16 15:44:58 info: Loaded Ollama settings from database
+2025-05-16 15:44:58 info: OllamaService initialized
+2025-05-16 15:44:58 info: RAG: OllamaService initialized successfully
+2025-05-16 15:48:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:48:26 info: Loaded Ollama settings from database
+2025-05-16 15:48:26 info: OllamaService initialized
+2025-05-16 15:48:40 info: Loaded Ollama settings from database
+2025-05-16 15:48:40 info: OllamaService initialized
+2025-05-16 15:48:40 info: RAG: OllamaService initialized successfully
+2025-05-16 15:55:09 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 15:55:09 info: Loaded Ollama settings from database
+2025-05-16 15:55:09 info: OllamaService initialized
+2025-05-16 15:55:22 info: Loaded Ollama settings from database
+2025-05-16 15:55:22 info: OllamaService initialized
+2025-05-16 15:55:22 info: RAG: OllamaService initialized successfully
+2025-05-16 15:55:39 info: Deleting RAG data for session 6e28b858-6920-45a4-888c-4387f309cb23 requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 15:55:39 info: RAG data deletion result for session 6e28b858-6920-45a4-888c-4387f309cb23: Success
+2025-05-16 15:55:39 info: Successfully deleted RAG data for session 6e28b858-6920-45a4-888c-4387f309cb23
+2025-05-16 15:55:45 info: Deleting RAG data for session 2b868b7c-7171-478c-8a43-c50552d2120a requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 15:55:45 info: RAG data deletion result for session 2b868b7c-7171-478c-8a43-c50552d2120a: Success
+2025-05-16 15:55:45 info: Successfully deleted RAG data for session 2b868b7c-7171-478c-8a43-c50552d2120a
+2025-05-16 15:55:48 info: Deleting RAG data for session 8dfd8d52-0a9c-49bf-aee5-42b61b92dbb3 requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 15:55:48 info: RAG data deletion result for session 8dfd8d52-0a9c-49bf-aee5-42b61b92dbb3: Success
+2025-05-16 15:55:48 info: Successfully deleted RAG data for session 8dfd8d52-0a9c-49bf-aee5-42b61b92dbb3
+2025-05-16 16:01:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:01:46 info: Loaded Ollama settings from database
+2025-05-16 16:01:46 info: OllamaService initialized
+2025-05-16 16:01:57 info: Loaded Ollama settings from database
+2025-05-16 16:01:57 info: OllamaService initialized
+2025-05-16 16:01:57 info: RAG: OllamaService initialized successfully
+2025-05-16 16:05:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:05:19 info: Loaded Ollama settings from database
+2025-05-16 16:05:19 info: OllamaService initialized
+2025-05-16 16:06:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:06:12 info: Loaded Ollama settings from database
+2025-05-16 16:06:12 info: OllamaService initialized
+2025-05-16 16:06:26 info: Loaded Ollama settings from database
+2025-05-16 16:06:26 info: OllamaService initialized
+2025-05-16 16:06:26 info: RAG: OllamaService initialized successfully
+2025-05-16 16:06:32 info: Deleting RAG data for session 8d5e4004-2820-4fab-8ce9-2c927c34b242 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:06:32 info: RAG data deletion result for session 8d5e4004-2820-4fab-8ce9-2c927c34b242: Success
+2025-05-16 16:06:32 info: Successfully deleted RAG data for session 8d5e4004-2820-4fab-8ce9-2c927c34b242
+2025-05-16 16:06:35 info: Deleting RAG data for session 7e785867-4a7d-415d-9382-a747575be9e4 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:06:35 info: RAG data deletion result for session 7e785867-4a7d-415d-9382-a747575be9e4: Success
+2025-05-16 16:06:35 info: Successfully deleted RAG data for session 7e785867-4a7d-415d-9382-a747575be9e4
+2025-05-16 16:06:37 info: Deleting RAG data for session d8c46e7f-6633-4852-9558-77dbf0b4a70d requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:06:37 info: RAG data deletion result for session d8c46e7f-6633-4852-9558-77dbf0b4a70d: Success
+2025-05-16 16:06:37 info: Successfully deleted RAG data for session d8c46e7f-6633-4852-9558-77dbf0b4a70d
+2025-05-16 16:06:40 info: Deleting RAG data for session b637a9ba-1cfa-4cee-86c9-a61d4abedf31 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:06:40 info: RAG data deletion result for session b637a9ba-1cfa-4cee-86c9-a61d4abedf31: Success
+2025-05-16 16:06:40 info: Successfully deleted RAG data for session b637a9ba-1cfa-4cee-86c9-a61d4abedf31
+2025-05-16 16:11:30 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:11:30 info: Loaded Ollama settings from database
+2025-05-16 16:11:30 info: OllamaService initialized
+2025-05-16 16:11:40 info: Loaded Ollama settings from database
+2025-05-16 16:11:40 info: OllamaService initialized
+2025-05-16 16:11:40 info: RAG: OllamaService initialized successfully
+2025-05-16 16:11:46 info: Deleting RAG data for session 76c0443f-c0c2-4fbd-a0c9-788e0f3542d7 requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 16:11:46 info: RAG data deletion result for session 76c0443f-c0c2-4fbd-a0c9-788e0f3542d7: Success
+2025-05-16 16:11:46 info: Successfully deleted RAG data for session 76c0443f-c0c2-4fbd-a0c9-788e0f3542d7
+2025-05-16 16:11:48 info: Deleting RAG data for session 528d522b-f6d9-4df7-85a6-16a7ffd8c854 requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 16:11:48 info: RAG data deletion result for session 528d522b-f6d9-4df7-85a6-16a7ffd8c854: Success
+2025-05-16 16:11:48 info: Successfully deleted RAG data for session 528d522b-f6d9-4df7-85a6-16a7ffd8c854
+2025-05-16 16:14:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:14:15 info: Loaded Ollama settings from database
+2025-05-16 16:14:15 info: OllamaService initialized
+2025-05-16 16:14:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:14:23 info: Loaded Ollama settings from database
+2025-05-16 16:14:23 info: OllamaService initialized
+2025-05-16 16:15:04 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:15:04 info: Loaded Ollama settings from database
+2025-05-16 16:15:04 info: OllamaService initialized
+2025-05-16 16:15:16 info: Loaded Ollama settings from database
+2025-05-16 16:15:16 info: OllamaService initialized
+2025-05-16 16:15:16 info: RAG: OllamaService initialized successfully
+2025-05-16 16:20:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:20:21 info: Loaded Ollama settings from database
+2025-05-16 16:20:21 info: OllamaService initialized
+2025-05-16 16:20:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:20:23 info: Loaded Ollama settings from database
+2025-05-16 16:20:23 info: OllamaService initialized
+2025-05-16 16:20:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:20:51 info: Loaded Ollama settings from database
+2025-05-16 16:20:51 info: OllamaService initialized
+2025-05-16 16:21:08 info: Loaded Ollama settings from database
+2025-05-16 16:21:08 info: OllamaService initialized
+2025-05-16 16:21:08 info: RAG: OllamaService initialized successfully
+2025-05-16 16:21:19 info: Deleting RAG data for session a07ee0bc-ac9a-490e-a28c-d062a993b8c2 requested by user 03c9bb1f-b791-43c9-99ed-296c92124530
+2025-05-16 16:21:19 info: RAG data deletion result for session a07ee0bc-ac9a-490e-a28c-d062a993b8c2: Success
+2025-05-16 16:21:19 info: Successfully deleted RAG data for session a07ee0bc-ac9a-490e-a28c-d062a993b8c2
+2025-05-16 16:33:03 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:33:03 info: Loaded Ollama settings from database
+2025-05-16 16:33:03 info: OllamaService initialized
+2025-05-16 16:33:08 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:33:08 info: Loaded Ollama settings from database
+2025-05-16 16:33:08 info: OllamaService initialized
+2025-05-16 16:33:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:33:51 info: Loaded Ollama settings from database
+2025-05-16 16:33:51 info: OllamaService initialized
+2025-05-16 16:34:13 info: Loaded Ollama settings from database
+2025-05-16 16:34:13 info: OllamaService initialized
+2025-05-16 16:34:13 info: RAG: OllamaService initialized successfully
+2025-05-16 16:34:19 info: Deleting RAG data for session 4e1e32b3-b8d7-4347-96d9-cd751c818dd0 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:34:19 info: RAG data deletion result for session 4e1e32b3-b8d7-4347-96d9-cd751c818dd0: Success
+2025-05-16 16:34:19 info: Successfully deleted RAG data for session 4e1e32b3-b8d7-4347-96d9-cd751c818dd0
+2025-05-16 16:34:21 info: Deleting RAG data for session 8e7e9d59-8ece-4a80-90c8-3bb5dcbde074 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:34:21 info: RAG data deletion result for session 8e7e9d59-8ece-4a80-90c8-3bb5dcbde074: Success
+2025-05-16 16:34:21 info: Successfully deleted RAG data for session 8e7e9d59-8ece-4a80-90c8-3bb5dcbde074
+2025-05-16 16:39:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:39:14 info: Loaded Ollama settings from database
+2025-05-16 16:39:14 info: OllamaService initialized
+2025-05-16 16:39:17 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:39:17 info: Loaded Ollama settings from database
+2025-05-16 16:39:17 info: OllamaService initialized
+2025-05-16 16:40:11 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:40:11 info: Loaded Ollama settings from database
+2025-05-16 16:40:11 info: OllamaService initialized
+2025-05-16 16:40:29 info: Loaded Ollama settings from database
+2025-05-16 16:40:29 info: OllamaService initialized
+2025-05-16 16:40:29 info: RAG: OllamaService initialized successfully
+2025-05-16 16:40:35 info: Deleting RAG data for session 9bc92b60-ba70-4051-941b-4fafc03d7936 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 16:40:35 info: RAG data deletion result for session 9bc92b60-ba70-4051-941b-4fafc03d7936: Success
+2025-05-16 16:40:35 info: Successfully deleted RAG data for session 9bc92b60-ba70-4051-941b-4fafc03d7936
+2025-05-16 16:55:07 info: Available columns in user_mcp_server_configurations for getUserMCPServerConfigurations: id, user_id, ssh_configuration_id, mcp_port, mcp_discovered_tools_schema, is_default, created_at, updated_at, mcp_nickname, mcp_host, mcp_server_version, mcp_connection_status, mcp_last_error_message
+2025-05-16 16:55:08 info: Loaded Ollama settings from database
+2025-05-16 16:59:39 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 16:59:39 info: Loaded Ollama settings from database
+2025-05-16 16:59:39 info: OllamaService initialized
+2025-05-16 17:03:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:03:12 info: Loaded Ollama settings from database
+2025-05-16 17:03:12 info: OllamaService initialized
+2025-05-16 17:03:40 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:03:40 info: Loaded Ollama settings from database
+2025-05-16 17:03:40 info: OllamaService initialized
+2025-05-16 17:03:59 info: Loaded Ollama settings from database
+2025-05-16 17:03:59 info: OllamaService initialized
+2025-05-16 17:03:59 info: RAG: OllamaService initialized successfully
+2025-05-16 17:04:05 info: Deleting RAG data for session cf342a48-9eed-49ac-bd18-df858ba374da requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 17:04:05 info: RAG data deletion result for session cf342a48-9eed-49ac-bd18-df858ba374da: Success
+2025-05-16 17:04:05 info: Successfully deleted RAG data for session cf342a48-9eed-49ac-bd18-df858ba374da
+2025-05-16 17:04:07 info: Deleting RAG data for session cf3cf874-fc9d-4d93-8d99-5dc4b510b73d requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 17:04:07 info: RAG data deletion result for session cf3cf874-fc9d-4d93-8d99-5dc4b510b73d: Success
+2025-05-16 17:04:07 info: Successfully deleted RAG data for session cf3cf874-fc9d-4d93-8d99-5dc4b510b73d
+2025-05-16 17:06:35 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:06:35 info: Loaded Ollama settings from database
+2025-05-16 17:06:35 info: OllamaService initialized
+2025-05-16 17:06:47 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:06:47 info: Loaded Ollama settings from database
+2025-05-16 17:06:47 info: OllamaService initialized
+2025-05-16 17:07:02 info: Loaded Ollama settings from database
+2025-05-16 17:07:02 info: OllamaService initialized
+2025-05-16 17:07:02 info: RAG: OllamaService initialized successfully
+2025-05-16 17:10:47 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:10:47 info: Loaded Ollama settings from database
+2025-05-16 17:10:47 info: OllamaService initialized
+2025-05-16 17:11:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:11:16 info: Loaded Ollama settings from database
+2025-05-16 17:11:16 info: OllamaService initialized
+2025-05-16 17:13:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:13:54 info: Loaded Ollama settings from database
+2025-05-16 17:13:54 info: OllamaService initialized
+2025-05-16 17:14:09 info: Loaded Ollama settings from database
+2025-05-16 17:14:09 info: OllamaService initialized
+2025-05-16 17:14:09 info: RAG: OllamaService initialized successfully
+2025-05-16 17:14:16 info: Deleting RAG data for session ccea8a13-63fc-475d-bc6b-1bbf605fdc33 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 17:14:16 info: RAG data deletion result for session ccea8a13-63fc-475d-bc6b-1bbf605fdc33: Success
+2025-05-16 17:14:16 info: Successfully deleted RAG data for session ccea8a13-63fc-475d-bc6b-1bbf605fdc33
+2025-05-16 17:31:59 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:32:00 info: Loaded Ollama settings from database
+2025-05-16 17:32:00 info: OllamaService initialized
+2025-05-16 17:45:58 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:45:58 info: Loaded Ollama settings from database
+2025-05-16 17:45:58 info: OllamaService initialized
+2025-05-16 17:46:00 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:46:00 info: Loaded Ollama settings from database
+2025-05-16 17:46:00 info: OllamaService initialized
+2025-05-16 17:46:33 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:46:33 info: Loaded Ollama settings from database
+2025-05-16 17:46:33 info: OllamaService initialized
+2025-05-16 17:46:41 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:46:41 info: Loaded Ollama settings from database
+2025-05-16 17:46:41 info: OllamaService initialized
+2025-05-16 17:52:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:52:10 info: Loaded Ollama settings from database
+2025-05-16 17:52:10 info: OllamaService initialized
+2025-05-16 17:52:25 info: Loaded Ollama settings from database
+2025-05-16 17:52:25 info: OllamaService initialized
+2025-05-16 17:52:25 info: RAG: OllamaService initialized successfully
+2025-05-16 17:56:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:56:23 info: Loaded Ollama settings from database
+2025-05-16 17:56:23 info: OllamaService initialized
+2025-05-16 17:56:24 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 17:56:24 info: Loaded Ollama settings from database
+2025-05-16 17:56:24 info: OllamaService initialized
+2025-05-16 18:00:18 info: Loaded Ollama settings from database
+2025-05-16 18:00:18 info: OllamaService initialized
+2025-05-16 18:00:18 info: RAG: OllamaService initialized successfully
+2025-05-16 18:00:26 info: Deleting RAG data for session 3f416469-6c82-4d3f-aa7d-881328b89454 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:00:26 info: RAG data deletion result for session 3f416469-6c82-4d3f-aa7d-881328b89454: Success
+2025-05-16 18:00:26 info: Successfully deleted RAG data for session 3f416469-6c82-4d3f-aa7d-881328b89454
+2025-05-16 18:00:29 info: Deleting RAG data for session 838bc68c-7118-4c94-8941-a2daff4d6fa1 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:00:29 info: RAG data deletion result for session 838bc68c-7118-4c94-8941-a2daff4d6fa1: Success
+2025-05-16 18:00:29 info: Successfully deleted RAG data for session 838bc68c-7118-4c94-8941-a2daff4d6fa1
+2025-05-16 18:04:09 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:04:09 info: Loaded Ollama settings from database
+2025-05-16 18:04:09 info: OllamaService initialized
+2025-05-16 18:04:29 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:04:30 info: Loaded Ollama settings from database
+2025-05-16 18:04:30 info: OllamaService initialized
+2025-05-16 18:04:32 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:04:32 info: Loaded Ollama settings from database
+2025-05-16 18:04:32 info: OllamaService initialized
+2025-05-16 18:05:03 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:05:03 info: Loaded Ollama settings from database
+2025-05-16 18:05:03 info: OllamaService initialized
+2025-05-16 18:05:25 info: Loaded Ollama settings from database
+2025-05-16 18:05:25 info: OllamaService initialized
+2025-05-16 18:05:25 info: RAG: OllamaService initialized successfully
+2025-05-16 18:09:37 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:09:37 info: Loaded Ollama settings from database
+2025-05-16 18:09:37 info: OllamaService initialized
+2025-05-16 18:10:11 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:10:11 info: Loaded Ollama settings from database
+2025-05-16 18:10:11 info: OllamaService initialized
+2025-05-16 18:10:38 info: Loaded Ollama settings from database
+2025-05-16 18:10:38 info: OllamaService initialized
+2025-05-16 18:10:38 info: RAG: OllamaService initialized successfully
+2025-05-16 18:11:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:11:43 info: Loaded Ollama settings from database
+2025-05-16 18:11:43 info: OllamaService initialized
+2025-05-16 18:11:53 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:11:53 info: Loaded Ollama settings from database
+2025-05-16 18:11:53 info: OllamaService initialized
+2025-05-16 18:12:02 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:12:02 info: Loaded Ollama settings from database
+2025-05-16 18:12:02 info: OllamaService initialized
+2025-05-16 18:12:15 info: Loaded Ollama settings from database
+2025-05-16 18:12:15 info: OllamaService initialized
+2025-05-16 18:12:15 info: RAG: OllamaService initialized successfully
+2025-05-16 18:15:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:15:26 info: Loaded Ollama settings from database
+2025-05-16 18:15:26 info: OllamaService initialized
+2025-05-16 18:16:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:16:14 info: Loaded Ollama settings from database
+2025-05-16 18:16:14 info: OllamaService initialized
+2025-05-16 18:16:27 info: Loaded Ollama settings from database
+2025-05-16 18:16:27 info: OllamaService initialized
+2025-05-16 18:16:27 info: RAG: OllamaService initialized successfully
+2025-05-16 18:16:33 info: Deleting RAG data for session 29ed8542-d79a-44c4-90a4-9923474b5a30 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:16:33 info: RAG data deletion result for session 29ed8542-d79a-44c4-90a4-9923474b5a30: Success
+2025-05-16 18:16:33 info: Successfully deleted RAG data for session 29ed8542-d79a-44c4-90a4-9923474b5a30
+2025-05-16 18:16:35 info: Deleting RAG data for session 853270bb-4e20-4339-b623-2b00633b0b56 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:16:35 info: RAG data deletion result for session 853270bb-4e20-4339-b623-2b00633b0b56: Success
+2025-05-16 18:16:35 info: Successfully deleted RAG data for session 853270bb-4e20-4339-b623-2b00633b0b56
+2025-05-16 18:16:37 info: Deleting RAG data for session 6f98fa2d-eb02-451d-b5ab-7a2aa06d49f1 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:16:37 info: RAG data deletion result for session 6f98fa2d-eb02-451d-b5ab-7a2aa06d49f1: Success
+2025-05-16 18:16:37 info: Successfully deleted RAG data for session 6f98fa2d-eb02-451d-b5ab-7a2aa06d49f1
+2025-05-16 18:16:39 info: Deleting RAG data for session 22fddfe4-0bb0-4fcf-aeda-3a017b06079a requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:16:39 info: RAG data deletion result for session 22fddfe4-0bb0-4fcf-aeda-3a017b06079a: Success
+2025-05-16 18:16:39 info: Successfully deleted RAG data for session 22fddfe4-0bb0-4fcf-aeda-3a017b06079a
+2025-05-16 18:16:42 info: Deleting RAG data for session 0ff1f665-c2fb-4a9d-bc60-35932f8c539f requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:16:42 info: RAG data deletion result for session 0ff1f665-c2fb-4a9d-bc60-35932f8c539f: Success
+2025-05-16 18:16:42 info: Successfully deleted RAG data for session 0ff1f665-c2fb-4a9d-bc60-35932f8c539f
+2025-05-16 18:19:29 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:19:29 info: Loaded Ollama settings from database
+2025-05-16 18:19:29 info: OllamaService initialized
+2025-05-16 18:19:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:19:31 info: Loaded Ollama settings from database
+2025-05-16 18:19:31 info: OllamaService initialized
+2025-05-16 18:19:47 info: Loaded Ollama settings from database
+2025-05-16 18:19:47 info: OllamaService initialized
+2025-05-16 18:19:47 info: RAG: OllamaService initialized successfully
+2025-05-16 18:19:51 info: Deleting RAG data for session d2c47304-c150-4236-aa8c-3f6e497ae6e9 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:19:51 info: RAG data deletion result for session d2c47304-c150-4236-aa8c-3f6e497ae6e9: Success
+2025-05-16 18:19:51 info: Successfully deleted RAG data for session d2c47304-c150-4236-aa8c-3f6e497ae6e9
+2025-05-16 18:19:54 info: Deleting RAG data for session 7298ec12-de68-43d1-99fc-18b29f50e2a3 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-16 18:19:54 info: RAG data deletion result for session 7298ec12-de68-43d1-99fc-18b29f50e2a3: Success
+2025-05-16 18:19:54 info: Successfully deleted RAG data for session 7298ec12-de68-43d1-99fc-18b29f50e2a3
+2025-05-16 18:25:03 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:25:03 info: Loaded Ollama settings from database
+2025-05-16 18:25:03 info: OllamaService initialized
+2025-05-16 18:25:47 info: Loaded Ollama settings from database
+2025-05-16 18:25:47 info: OllamaService initialized
+2025-05-16 18:25:47 info: RAG: OllamaService initialized successfully
+2025-05-16 18:26:33 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:26:33 info: Loaded Ollama settings from database
+2025-05-16 18:26:33 info: OllamaService initialized
+2025-05-16 18:26:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:26:42 info: Loaded Ollama settings from database
+2025-05-16 18:26:42 info: OllamaService initialized
+2025-05-16 18:26:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:26:44 info: Loaded Ollama settings from database
+2025-05-16 18:26:44 info: OllamaService initialized
+2025-05-16 18:27:14 info: Loaded Ollama settings from database
+2025-05-16 18:27:14 info: OllamaService initialized
+2025-05-16 18:27:14 info: RAG: OllamaService initialized successfully
+2025-05-16 18:27:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:27:55 info: Loaded Ollama settings from database
+2025-05-16 18:27:55 info: OllamaService initialized
+2025-05-16 18:28:08 info: Loaded Ollama settings from database
+2025-05-16 18:28:08 info: OllamaService initialized
+2025-05-16 18:28:08 info: RAG: OllamaService initialized successfully
+2025-05-16 18:29:58 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:29:58 info: Loaded Ollama settings from database
+2025-05-16 18:29:58 info: OllamaService initialized
+2025-05-16 18:30:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:30:21 info: Loaded Ollama settings from database
+2025-05-16 18:30:21 info: OllamaService initialized
+2025-05-16 18:32:13 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:32:13 info: Loaded Ollama settings from database
+2025-05-16 18:32:13 info: OllamaService initialized
+2025-05-16 18:32:27 info: Loaded Ollama settings from database
+2025-05-16 18:32:27 info: OllamaService initialized
+2025-05-16 18:32:27 info: RAG: OllamaService initialized successfully
+2025-05-16 18:35:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:35:32 info: Loaded Ollama settings from database
+2025-05-16 18:35:32 info: OllamaService initialized
+2025-05-16 18:36:07 info: Loaded Ollama settings from database
+2025-05-16 18:36:07 info: OllamaService initialized
+2025-05-16 18:36:07 info: RAG: OllamaService initialized successfully
+2025-05-16 18:37:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:37:54 info: Loaded Ollama settings from database
+2025-05-16 18:37:54 info: OllamaService initialized
+2025-05-16 18:37:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:37:56 info: Loaded Ollama settings from database
+2025-05-16 18:37:56 info: OllamaService initialized
+2025-05-16 18:39:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:39:22 info: Loaded Ollama settings from database
+2025-05-16 18:39:22 info: OllamaService initialized
+2025-05-16 18:39:36 info: Loaded Ollama settings from database
+2025-05-16 18:39:36 info: OllamaService initialized
+2025-05-16 18:39:36 info: RAG: OllamaService initialized successfully
+2025-05-16 18:42:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:42:15 info: Loaded Ollama settings from database
+2025-05-16 18:42:15 info: OllamaService initialized
+2025-05-16 18:42:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:42:17 info: Loaded Ollama settings from database
+2025-05-16 18:42:17 info: OllamaService initialized
+2025-05-16 18:42:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:42:21 info: Loaded Ollama settings from database
+2025-05-16 18:42:21 info: OllamaService initialized
+2025-05-16 18:42:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-16 18:42:23 info: Loaded Ollama settings from database
+2025-05-16 18:42:23 info: OllamaService initialized
+2025-05-16 18:42:44 info: Loaded Ollama settings from database
+2025-05-16 18:42:44 info: OllamaService initialized
+2025-05-16 18:42:44 info: RAG: OllamaService initialized successfully
+2025-05-17 12:29:07 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:29:24 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:33:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:34:32 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:34:32 info: Loaded Ollama settings from database
+2025-05-17 12:34:32 info: OllamaService initialized
+2025-05-17 12:34:57 info: Loaded Ollama settings from database
+2025-05-17 12:34:57 info: OllamaService initialized
+2025-05-17 12:34:57 info: RAG: OllamaService initialized successfully
+2025-05-17 12:35:07 info: Deleting RAG data for session 50b91e19-7716-4b3a-a087-b32fad9ec18d requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 12:35:07 info: RAG data deletion result for session 50b91e19-7716-4b3a-a087-b32fad9ec18d: Success
+2025-05-17 12:35:07 info: Successfully deleted RAG data for session 50b91e19-7716-4b3a-a087-b32fad9ec18d
+2025-05-17 12:35:12 info: Deleting RAG data for session 8be3cb09-f3e2-484c-bad9-be5bdcc82be8 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 12:35:12 info: RAG data deletion result for session 8be3cb09-f3e2-484c-bad9-be5bdcc82be8: Success
+2025-05-17 12:35:12 info: Successfully deleted RAG data for session 8be3cb09-f3e2-484c-bad9-be5bdcc82be8
+2025-05-17 12:35:37 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:35:37 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:37:08 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:37:08 info: Loaded Ollama settings from database
+2025-05-17 12:37:08 info: OllamaService initialized
+2025-05-17 12:37:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:37:10 info: Loaded Ollama settings from database
+2025-05-17 12:37:10 info: OllamaService initialized
+2025-05-17 12:37:27 info: Loaded Ollama settings from database
+2025-05-17 12:37:27 info: OllamaService initialized
+2025-05-17 12:37:27 info: RAG: OllamaService initialized successfully
+2025-05-17 12:37:48 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:37:48 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:38:49 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:38:50 info: Loaded Ollama settings from database
+2025-05-17 12:38:50 info: OllamaService initialized
+2025-05-17 12:38:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:38:52 info: Loaded Ollama settings from database
+2025-05-17 12:38:52 info: OllamaService initialized
+2025-05-17 12:39:35 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:39:35 info: Loaded Ollama settings from database
+2025-05-17 12:39:35 info: OllamaService initialized
+2025-05-17 12:39:49 info: Loaded Ollama settings from database
+2025-05-17 12:39:49 info: OllamaService initialized
+2025-05-17 12:39:49 info: RAG: OllamaService initialized successfully
+2025-05-17 12:39:55 info: Deleting RAG data for session 0aca35ca-466f-4ecd-b794-28bf0d469507 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 12:39:55 info: RAG data deletion result for session 0aca35ca-466f-4ecd-b794-28bf0d469507: Success
+2025-05-17 12:39:55 info: Successfully deleted RAG data for session 0aca35ca-466f-4ecd-b794-28bf0d469507
+2025-05-17 12:40:00 info: Deleting RAG data for session fbc78d51-be9e-474e-b52f-15a265f8a817 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 12:40:00 info: RAG data deletion result for session fbc78d51-be9e-474e-b52f-15a265f8a817: Success
+2025-05-17 12:40:00 info: Successfully deleted RAG data for session fbc78d51-be9e-474e-b52f-15a265f8a817
+2025-05-17 12:40:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:40:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:42:39 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:42:39 info: Loaded Ollama settings from database
+2025-05-17 12:42:39 info: OllamaService initialized
+2025-05-17 12:42:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:42:45 info: Loaded Ollama settings from database
+2025-05-17 12:42:45 info: OllamaService initialized
+2025-05-17 12:42:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:42:55 info: Loaded Ollama settings from database
+2025-05-17 12:42:55 info: OllamaService initialized
+2025-05-17 12:45:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:45:31 info: Loaded Ollama settings from database
+2025-05-17 12:45:31 info: OllamaService initialized
+2025-05-17 12:45:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:45:46 info: Loaded Ollama settings from database
+2025-05-17 12:45:46 info: OllamaService initialized
+2025-05-17 12:45:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:45:51 info: Loaded Ollama settings from database
+2025-05-17 12:45:51 info: OllamaService initialized
+2025-05-17 12:46:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:46:06 info: Loaded Ollama settings from database
+2025-05-17 12:46:06 info: OllamaService initialized
+2025-05-17 12:46:57 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:46:57 info: Loaded Ollama settings from database
+2025-05-17 12:46:57 info: OllamaService initialized
+2025-05-17 12:46:59 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:46:59 info: Loaded Ollama settings from database
+2025-05-17 12:46:59 info: OllamaService initialized
+2025-05-17 12:47:18 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 12:47:19 info: Loaded Ollama settings from database
+2025-05-17 12:47:19 info: OllamaService initialized
+2025-05-17 12:47:30 info: Loaded Ollama settings from database
+2025-05-17 12:47:30 info: OllamaService initialized
+2025-05-17 12:47:30 info: RAG: OllamaService initialized successfully
+2025-05-17 12:47:54 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:47:54 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:51:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:05:53 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:05:53 info: Loaded Ollama settings from database
+2025-05-17 13:05:53 info: OllamaService initialized
+2025-05-17 13:05:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:05:56 info: Loaded Ollama settings from database
+2025-05-17 13:05:56 info: OllamaService initialized
+2025-05-17 13:08:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:08:15 info: Loaded Ollama settings from database
+2025-05-17 13:08:15 info: OllamaService initialized
+2025-05-17 13:08:31 info: Loaded Ollama settings from database
+2025-05-17 13:08:31 info: OllamaService initialized
+2025-05-17 13:08:31 info: RAG: OllamaService initialized successfully
+2025-05-17 13:09:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:09:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:11:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:11:22 info: Loaded Ollama settings from database
+2025-05-17 13:11:22 info: OllamaService initialized
+2025-05-17 13:11:36 info: Loaded Ollama settings from database
+2025-05-17 13:11:36 info: OllamaService initialized
+2025-05-17 13:11:36 info: RAG: OllamaService initialized successfully
+2025-05-17 13:11:58 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:11:58 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:12:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:12:50 info: Loaded Ollama settings from database
+2025-05-17 13:12:50 info: OllamaService initialized
+2025-05-17 13:13:00 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:13:00 info: Loaded Ollama settings from database
+2025-05-17 13:13:00 info: OllamaService initialized
+2025-05-17 13:14:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:14:06 info: Loaded Ollama settings from database
+2025-05-17 13:14:06 info: OllamaService initialized
+2025-05-17 13:14:23 info: Loaded Ollama settings from database
+2025-05-17 13:14:23 info: OllamaService initialized
+2025-05-17 13:14:23 info: RAG: OllamaService initialized successfully
+2025-05-17 13:14:34 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:14:34 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:14:57 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:14:57 info: Loaded Ollama settings from database
+2025-05-17 13:14:57 info: OllamaService initialized
+2025-05-17 13:15:18 info: Loaded Ollama settings from database
+2025-05-17 13:15:18 info: OllamaService initialized
+2025-05-17 13:15:18 info: RAG: OllamaService initialized successfully
+2025-05-17 13:16:02 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:16:18 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:16:18 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:17:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:17:46 info: Loaded Ollama settings from database
+2025-05-17 13:17:46 info: OllamaService initialized
+2025-05-17 13:18:04 info: Loaded Ollama settings from database
+2025-05-17 13:18:04 info: OllamaService initialized
+2025-05-17 13:18:04 info: RAG: OllamaService initialized successfully
+2025-05-17 13:18:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:18:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:19:06 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:19:06 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:23:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:23:55 info: Loaded Ollama settings from database
+2025-05-17 13:23:55 info: OllamaService initialized
+2025-05-17 13:24:16 info: Loaded Ollama settings from database
+2025-05-17 13:24:16 info: OllamaService initialized
+2025-05-17 13:24:16 info: RAG: OllamaService initialized successfully
+2025-05-17 13:24:22 info: Deleting RAG data for session 93fee83a-9585-443a-b09a-f51cce60e010 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 13:24:22 info: RAG data deletion result for session 93fee83a-9585-443a-b09a-f51cce60e010: Success
+2025-05-17 13:24:22 info: Successfully deleted RAG data for session 93fee83a-9585-443a-b09a-f51cce60e010
+2025-05-17 13:24:52 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:24:52 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:34:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:34:10 info: Loaded Ollama settings from database
+2025-05-17 13:34:10 info: OllamaService initialized
+2025-05-17 13:34:23 info: Loaded Ollama settings from database
+2025-05-17 13:34:23 info: OllamaService initialized
+2025-05-17 13:34:23 info: RAG: OllamaService initialized successfully
+2025-05-17 13:34:34 info: Deleting RAG data for session 94f187cb-3a79-4254-b46e-db4d0c2d1b28 requested by user 23b818b5-c1c6-4832-9fd7-f2840c0168f9
+2025-05-17 13:34:34 info: RAG data deletion result for session 94f187cb-3a79-4254-b46e-db4d0c2d1b28: Success
+2025-05-17 13:34:34 info: Successfully deleted RAG data for session 94f187cb-3a79-4254-b46e-db4d0c2d1b28
+2025-05-17 13:35:07 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:35:07 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:36:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:36:12 info: Loaded Ollama settings from database
+2025-05-17 13:36:12 info: OllamaService initialized
+2025-05-17 13:36:30 info: Loaded Ollama settings from database
+2025-05-17 13:36:30 info: OllamaService initialized
+2025-05-17 13:36:30 info: RAG: OllamaService initialized successfully
+2025-05-17 13:37:09 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:37:09 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:57:49 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:57:49 info: Loaded Ollama settings from database
+2025-05-17 13:57:49 info: OllamaService initialized
+2025-05-17 13:58:07 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 13:58:07 info: Loaded Ollama settings from database
+2025-05-17 13:58:07 info: OllamaService initialized
+2025-05-17 13:58:40 info: Loaded Ollama settings from database
+2025-05-17 13:58:40 info: OllamaService initialized
+2025-05-17 13:58:40 info: RAG: OllamaService initialized successfully
+2025-05-17 13:59:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:59:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:53:27 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 14:53:27 info: Loaded Ollama settings from database
+2025-05-17 14:53:27 info: OllamaService initialized
+2025-05-17 14:53:58 info: Loaded Ollama settings from database
+2025-05-17 14:53:58 info: OllamaService initialized
+2025-05-17 14:53:58 info: RAG: OllamaService initialized successfully
+2025-05-17 14:54:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:54:27 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:55:10 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:55:12 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:56:35 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:56:38 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:57:00 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:57:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:59:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-17 14:59:56 info: Loaded Ollama settings from database
+2025-05-17 14:59:56 info: OllamaService initialized

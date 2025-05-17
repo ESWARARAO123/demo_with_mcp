@@ -2,5 +2,5 @@
 const backendUrl = process.env.REACT_APP_API_URL || '/api';
 
 export const config = {
-  apiBaseUrl: backendUrl
+  apiBaseUrl: 'http://localhost:5000'
 }; 

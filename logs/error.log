@@ -49,3 +49,41 @@
 2025-05-09 17:53:34 error: SSH authentication failed: connect ECONNREFUSED 172.16.16.54:52
 2025-05-11 18:37:19 error: SSH authentication failed: connect ECONNREFUSED 172.16.16.54:52
 2025-05-11 18:37:27 error: SSH authentication failed: connect ECONNREFUSED 172.16.16.54:52
+2025-05-17 12:35:37 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:35:37 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:37:48 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:37:48 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:40:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:40:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:47:54 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:47:54 error: Error setting up stream: Request failed with status code 404
+2025-05-17 12:51:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:09:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:09:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:11:58 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:11:58 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:14:34 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:14:34 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:16:02 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:16:18 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:16:18 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:18:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:18:15 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:19:06 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:19:06 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:24:52 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:24:52 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:35:07 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:35:07 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:37:09 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:37:09 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:59:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 13:59:03 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:54:21 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:54:27 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:55:10 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:55:12 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:56:35 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:56:38 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:57:00 error: Error setting up stream: Request failed with status code 404
+2025-05-17 14:57:03 error: Error setting up stream: Request failed with status code 404
