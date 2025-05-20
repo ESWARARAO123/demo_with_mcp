@@ -67,7 +67,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
     let query = '';
     let results = '';
     
-    // Extract query
+    // Extract query - only get the SQL query without any additional text
     if (parts[0].includes('```sql')) {
       query = parts[0].replace(/```sql\n|\n```/g, '').trim();
     }
@@ -390,7 +390,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
       <div style={isAI ? messageBubbleStyles.ai.header : messageBubbleStyles.user.header}>
         {isAI ? (
           <div style={messageBubbleStyles.ai.avatar}>
-            {isSQLResponse ? 'SQL' : isSystemMessage ? 'SQL' : 'AI'}
+            {isSQLResponse ? 'SQL' : isSystemMessage ? 'AI' : 'AI'}
           </div>
         ) : (
           <div style={messageBubbleStyles.user.avatar}>
@@ -415,16 +415,21 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
         ) : isSQLResponse ? (
           // SQL response - show query and results
           renderSQLResponse(message.content)
-        ) : isSystemMessage ? (
-          // Error or no results message
+        ) : (
+          // Regular AI response or error message
           <div style={{
             color: message.content.startsWith('Error:') ? 'var(--color-error)' : 'var(--color-text)',
             fontSize: '0.95rem',
             lineHeight: '1.6',
+            backgroundColor: message.content.startsWith('Error:') ? 
+              (isDarkTheme ? 'rgba(255, 0, 0, 0.1)' : 'rgba(255, 0, 0, 0.05)') : 
+              'transparent',
+            padding: message.content.startsWith('Error:') ? '0.5rem' : '0',
+            borderRadius: message.content.startsWith('Error:') ? '0.5rem' : '0',
           }}>
             {message.content}
           </div>
-        ) : null}
+        )}
       </div>
 
       {/* Add CSS for animations */}

@@ -15,6 +15,7 @@ import FilePreview from './FilePreview';
 import './ChatInput.css';
 import { config } from '../../config';
 import { chat2sqlService } from '../../services/chat2sqlService';
+import { chatService } from '../../services/chatService';
 
 interface ChatInputProps {
   onSendMessage: (message: string, file?: File, isSystemMessage?: boolean) => void;
@@ -38,7 +39,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
   uploadProgress = 0,
   onStopGeneration,
   isRagAvailable = false,
-  isRagEnabled = true,
+  isRagEnabled = false,
   onToggleRag
 }) => {
   const [input, setInput] = useState('');
@@ -128,7 +129,8 @@ const ChatInput: React.FC<ChatInputProps> = ({
       try {
         // Send user's message first (this will appear on the right)
         const userMessage = input.trim();
-        onSendMessage(userMessage, undefined, false); // false for user message
+        // Send only the user's question, not the SQL query
+        onSendMessage(userMessage, undefined, false);
         
         // Execute the query through the API endpoint
         const result = await chat2sqlService.executeQuery(userMessage);
@@ -136,13 +138,13 @@ const ChatInput: React.FC<ChatInputProps> = ({
         if (result.sql && result.data) {
           // Format the SQL response with just the query and table data
           const formattedMessage = `\`\`\`sql\n${result.sql}\n\`\`\`\n\n${formatTableData(result.columns, result.data)}`;
-          onSendMessage(formattedMessage, undefined, true); // true for system message
+          onSendMessage(formattedMessage, undefined, true);
         } else if (result.detail) {
           // If there's an error message from the API, show it
           onSendMessage(result.detail, undefined, true);
         } else {
-          // If no data and no error message, show message below the query
-          const noResultsMessage = `\`\`\`sql\n${result.sql || input}\n\`\`\`\n\nNo results found`;
+          // If no data and no error message, show just the query
+          const noResultsMessage = `\`\`\`sql\n${result.sql}\n\`\`\`\n\nNo results found`;
           onSendMessage(noResultsMessage, undefined, true);
         }
       } catch (err) {
@@ -153,8 +155,26 @@ const ChatInput: React.FC<ChatInputProps> = ({
         setLoading(false);
       }
     } else {
-      // Regular chat mode
-      onSendMessage(input.trim());
+      // Regular chat mode - use chat service
+      setLoading(true);
+      const userMessage = input.trim();
+      
+      // Send user's message (will appear on the right)
+      onSendMessage(userMessage, undefined, false);
+      
+      try {
+        // Get response from chat service
+        const response = await chatService.sendMessage(userMessage);
+        // Send the response as a system message (will appear on the left)
+        onSendMessage(response, undefined, true);
+      } catch (err) {
+        // On error, show the error message as a system message (will appear on the left)
+        const errorMessage = err instanceof Error ? err.message : String(err);
+        // Send error message as a system message (AI side)
+        onSendMessage(errorMessage, undefined, true);
+      } finally {
+        setLoading(false);
+      }
     }
     setInput("");
   };
@@ -335,11 +355,12 @@ const ChatInput: React.FC<ChatInputProps> = ({
             onClick={handleToggle}
             style={{
               ...chatInputStyles.ragToggleButton,
-              ...(chat2sqlEnabled ? chatInputStyles.ragToggleEnabled : chatInputStyles.ragToggleDisabled),
-              opacity: chat2sqlEnabled ? 1 : 0.6,
+              ...(chat2sqlEnabled ? {
+                backgroundColor: 'var(--color-primary)',
+                color: 'white',
+                opacity: 1
+              } : chatInputStyles.ragToggleDisabled),
               cursor: 'pointer',
-              backgroundColor: chat2sqlEnabled ? 'var(--color-primary)' : 'var(--color-background-secondary)',
-              color: chat2sqlEnabled ? 'white' : 'var(--color-text)',
               border: '1px solid var(--color-border)',
               padding: '0.5rem 1rem',
               borderRadius: '0.5rem',
@@ -353,7 +374,7 @@ const ChatInput: React.FC<ChatInputProps> = ({
             title={chat2sqlEnabled ? "Disable Chat2SQL" : "Enable Chat2SQL"}
           >
             <DocumentTextIcon className="h-4 w-4" />
-            {chat2sqlEnabled ? "Chat2SQL Enabled" : "Chat2SQL"}
+            Chat2SQL
           </button>
         </div>
       </form>

@@ -17458,3 +17458,337 @@ SELECT tablename FROM pg_tables WHERE table..."
 2025-05-20 12:40:09 info: Generating embedding using model: nomic-embed-text
 2025-05-20 12:40:39 info: Generating embedding using model: nomic-embed-text
 2025-05-20 12:41:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:41:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:42:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:42:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:43:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:43:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:44:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:44:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:44:19 info: Loaded Ollama settings from database
+2025-05-20 12:44:19 info: OllamaService initialized
+2025-05-20 12:44:27 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:44:27 info: Loaded Ollama settings from database
+2025-05-20 12:44:27 info: OllamaService initialized
+2025-05-20 12:44:36 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:44:36 info: Loaded Ollama settings from database
+2025-05-20 12:44:36 info: OllamaService initialized
+2025-05-20 12:45:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:45:12 info: Loaded Ollama settings from database
+2025-05-20 12:45:12 info: OllamaService initialized
+2025-05-20 12:45:59 info: Loaded Ollama settings from database
+2025-05-20 12:45:59 info: OllamaService initialized
+2025-05-20 12:45:59 info: RAG: OllamaService initialized successfully
+2025-05-20 12:45:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:40 info: RAG is available, processing chat message: "give the first five rows in place qor table..."
+2025-05-20 12:46:40 info: Using session context: 93f36d63-ba70-46d4-bb1c-50c544a8db30
+2025-05-20 12:46:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:46 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:46 info: RAG is available, processing chat message: "```sql
+SELECT * FROM place_qor_csv LIMIT 5;
+```
+
+m..."
+2025-05-20 12:46:46 info: Using session context: 93f36d63-ba70-46d4-bb1c-50c544a8db30
+2025-05-20 12:46:46 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:46:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:47:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:47:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:48:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:48:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:49:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:49:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:50:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:50:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:51:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:51:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:52:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:52:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:53:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:53:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:54:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:54:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:55:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:55:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:56:09 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:56:09 info: Loaded Ollama settings from database
+2025-05-20 12:56:09 info: OllamaService initialized
+2025-05-20 12:56:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:56:43 info: Loaded Ollama settings from database
+2025-05-20 12:56:43 info: OllamaService initialized
+2025-05-20 12:56:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:56:54 info: Loaded Ollama settings from database
+2025-05-20 12:56:54 info: OllamaService initialized
+2025-05-20 12:56:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:56:56 info: Loaded Ollama settings from database
+2025-05-20 12:56:56 info: OllamaService initialized
+2025-05-20 12:57:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:57:12 info: Loaded Ollama settings from database
+2025-05-20 12:57:12 info: OllamaService initialized
+2025-05-20 12:57:17 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:57:17 info: Loaded Ollama settings from database
+2025-05-20 12:57:17 info: OllamaService initialized
+2025-05-20 12:58:28 info: Loaded Ollama settings from database
+2025-05-20 12:58:28 info: OllamaService initialized
+2025-05-20 12:58:28 info: RAG: OllamaService initialized successfully
+2025-05-20 12:58:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:58:49 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:58:49 info: RAG is available, processing chat message: "what are the tables available in my database..."
+2025-05-20 12:58:49 info: Using session context: 93f36d63-ba70-46d4-bb1c-50c544a8db30
+2025-05-20 12:58:49 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:58:55 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:58:55 info: RAG is available, processing chat message: "```sql
+SELECT table_name FROM information_schema.t..."
+2025-05-20 12:58:55 info: Using session context: 93f36d63-ba70-46d4-bb1c-50c544a8db30
+2025-05-20 12:58:55 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:58:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:59:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:59:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:00:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:00:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:01:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:01:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:02:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:02:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:03:18 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:03:18 info: Loaded Ollama settings from database
+2025-05-20 13:03:18 info: OllamaService initialized
+2025-05-20 13:03:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:03:21 info: Loaded Ollama settings from database
+2025-05-20 13:03:21 info: OllamaService initialized
+2025-05-20 13:03:40 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:03:40 info: Loaded Ollama settings from database
+2025-05-20 13:03:40 info: OllamaService initialized
+2025-05-20 13:03:53 info: Loaded Ollama settings from database
+2025-05-20 13:03:53 info: OllamaService initialized
+2025-05-20 13:03:53 info: RAG: OllamaService initialized successfully
+2025-05-20 13:03:53 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:04:23 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:04:53 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:05:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:05:14 info: Loaded Ollama settings from database
+2025-05-20 13:05:14 info: OllamaService initialized
+2025-05-20 13:05:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:05:20 info: Loaded Ollama settings from database
+2025-05-20 13:05:20 info: OllamaService initialized
+2025-05-20 13:05:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:05:22 info: Loaded Ollama settings from database
+2025-05-20 13:05:22 info: OllamaService initialized
+2025-05-20 13:05:24 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:05:24 info: Loaded Ollama settings from database
+2025-05-20 13:05:24 info: OllamaService initialized
+2025-05-20 13:05:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:05:31 info: Loaded Ollama settings from database
+2025-05-20 13:05:31 info: OllamaService initialized
+2025-05-20 13:06:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:06:23 info: Loaded Ollama settings from database
+2025-05-20 13:06:23 info: OllamaService initialized
+2025-05-20 13:06:28 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:06:29 info: Loaded Ollama settings from database
+2025-05-20 13:06:29 info: OllamaService initialized
+2025-05-20 13:06:30 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:06:31 info: Loaded Ollama settings from database
+2025-05-20 13:06:31 info: OllamaService initialized
+2025-05-20 13:07:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:07:06 info: Loaded Ollama settings from database
+2025-05-20 13:07:06 info: OllamaService initialized
+2025-05-20 13:07:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:07:12 info: Loaded Ollama settings from database
+2025-05-20 13:07:12 info: OllamaService initialized
+2025-05-20 13:07:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:07:45 info: Loaded Ollama settings from database
+2025-05-20 13:07:45 info: OllamaService initialized
+2025-05-20 13:07:58 info: Loaded Ollama settings from database
+2025-05-20 13:07:58 info: OllamaService initialized
+2025-05-20 13:07:58 info: RAG: OllamaService initialized successfully
+2025-05-20 13:07:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:08:13 info: Loaded Ollama settings from database
+2025-05-20 13:08:22 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:08:52 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:09:22 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:09:41 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:09:42 info: Loaded Ollama settings from database
+2025-05-20 13:09:42 info: OllamaService initialized
+2025-05-20 13:09:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:09:43 info: Loaded Ollama settings from database
+2025-05-20 13:09:43 info: OllamaService initialized
+2025-05-20 13:10:01 info: Loaded Ollama settings from database
+2025-05-20 13:10:01 info: OllamaService initialized
+2025-05-20 13:10:01 info: RAG: OllamaService initialized successfully
+2025-05-20 13:10:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:10:06 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:10:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:10:30 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:10:31 info: Loaded Ollama settings from database
+2025-05-20 13:10:31 info: OllamaService initialized
+2025-05-20 13:10:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:10:50 info: Loaded Ollama settings from database
+2025-05-20 13:10:50 info: OllamaService initialized
+2025-05-20 13:11:02 info: Loaded Ollama settings from database
+2025-05-20 13:11:02 info: OllamaService initialized
+2025-05-20 13:11:02 info: RAG: OllamaService initialized successfully
+2025-05-20 13:11:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:11:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:12:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:12:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:13:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:13:09 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:13:09 info: Loaded Ollama settings from database
+2025-05-20 13:13:09 info: OllamaService initialized
+2025-05-20 13:13:11 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:13:11 info: Loaded Ollama settings from database
+2025-05-20 13:13:11 info: OllamaService initialized
+2025-05-20 13:13:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:13:21 info: Loaded Ollama settings from database
+2025-05-20 13:13:21 info: OllamaService initialized
+2025-05-20 13:13:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:13:45 info: Loaded Ollama settings from database
+2025-05-20 13:13:45 info: OllamaService initialized
+2025-05-20 13:13:59 info: Loaded Ollama settings from database
+2025-05-20 13:13:59 info: OllamaService initialized
+2025-05-20 13:13:59 info: RAG: OllamaService initialized successfully
+2025-05-20 13:13:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:14:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:14:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:15:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:15:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:15:45 info: Loaded Ollama settings from database
+2025-05-20 13:15:45 info: OllamaService initialized
+2025-05-20 13:16:00 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:16:00 info: Loaded Ollama settings from database
+2025-05-20 13:16:00 info: OllamaService initialized
+2025-05-20 13:16:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:16:15 info: Loaded Ollama settings from database
+2025-05-20 13:16:15 info: OllamaService initialized
+2025-05-20 13:16:30 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:16:30 info: Loaded Ollama settings from database
+2025-05-20 13:16:30 info: OllamaService initialized
+2025-05-20 13:16:47 info: Loaded Ollama settings from database
+2025-05-20 13:16:47 info: OllamaService initialized
+2025-05-20 13:16:47 info: RAG: OllamaService initialized successfully
+2025-05-20 13:16:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:52 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:52 info: RAG is available, processing chat message: "give the list tables available in my database..."
+2025-05-20 13:17:52 info: Using session context: 7a753da0-d4b7-46c1-8ff4-be70df715cc6
+2025-05-20 13:17:52 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:17:58 info: RAG is available, processing chat message: "```sql
+SELECT table_name FROM information_schema.t..."
+2025-05-20 13:17:58 info: Using session context: 7a753da0-d4b7-46c1-8ff4-be70df715cc6
+2025-05-20 13:17:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:18:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:18:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:19:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:19:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:20:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:20:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:21:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:21:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:22:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:22:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:22:43 info: Loaded Ollama settings from database
+2025-05-20 13:22:43 info: OllamaService initialized
+2025-05-20 13:22:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:22:54 info: Loaded Ollama settings from database
+2025-05-20 13:22:54 info: OllamaService initialized
+2025-05-20 13:23:24 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:23:24 info: Loaded Ollama settings from database
+2025-05-20 13:23:24 info: OllamaService initialized
+2025-05-20 13:25:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:25:06 info: Loaded Ollama settings from database
+2025-05-20 13:25:06 info: OllamaService initialized
+2025-05-20 13:25:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:25:21 info: Loaded Ollama settings from database
+2025-05-20 13:25:21 info: OllamaService initialized
+2025-05-20 13:25:41 info: Loaded Ollama settings from database
+2025-05-20 13:25:41 info: OllamaService initialized
+2025-05-20 13:25:41 info: RAG: OllamaService initialized successfully
+2025-05-20 13:25:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:26:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:26:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:27:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:27:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:27:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:27:51 info: Loaded Ollama settings from database
+2025-05-20 13:27:51 info: OllamaService initialized
+2025-05-20 13:28:04 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:28:05 info: Loaded Ollama settings from database
+2025-05-20 13:28:05 info: OllamaService initialized
+2025-05-20 13:28:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:28:16 info: Loaded Ollama settings from database
+2025-05-20 13:28:16 info: OllamaService initialized
+2025-05-20 13:28:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:28:31 info: Loaded Ollama settings from database
+2025-05-20 13:28:31 info: OllamaService initialized
+2025-05-20 13:28:42 info: Loaded Ollama settings from database
+2025-05-20 13:28:42 info: OllamaService initialized
+2025-05-20 13:28:42 info: RAG: OllamaService initialized successfully
+2025-05-20 13:28:42 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:28:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:28:47 info: RAG is available, processing chat message: "hi..."
+2025-05-20 13:28:47 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:28:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:28:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:28:47 info: RAG is available, processing chat message: "Unable to get response from the chat service. Plea..."
+2025-05-20 13:28:47 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:28:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:29:12 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:29:42 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:29:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:29:55 info: Loaded Ollama settings from database
+2025-05-20 13:29:55 info: OllamaService initialized
+2025-05-20 13:30:02 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:30:02 info: Loaded Ollama settings from database
+2025-05-20 13:30:02 info: OllamaService initialized
+2025-05-20 13:30:08 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:30:08 info: Loaded Ollama settings from database
+2025-05-20 13:30:08 info: OllamaService initialized
+2025-05-20 13:30:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:30:10 info: Loaded Ollama settings from database
+2025-05-20 13:30:10 info: OllamaService initialized
+2025-05-20 13:30:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 13:30:42 info: Loaded Ollama settings from database
+2025-05-20 13:30:42 info: OllamaService initialized
+2025-05-20 13:31:28 info: Loaded Ollama settings from database
+2025-05-20 13:31:28 info: OllamaService initialized
+2025-05-20 13:31:28 info: RAG: OllamaService initialized successfully
+2025-05-20 13:31:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:31:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:31:40 info: RAG is available, processing chat message: "hi..."
+2025-05-20 13:31:40 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:31:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:31:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:31:40 info: RAG is available, processing chat message: "Unable to get response from the chat service. Plea..."
+2025-05-20 13:31:40 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:31:40 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:31:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:32:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:32:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:18 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:18 info: RAG is available, processing chat message: "give the first five rows from place_qor table..."
+2025-05-20 13:33:18 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:33:18 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:24 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:24 info: RAG is available, processing chat message: "```sql
+SELECT * FROM place_qor_csv LIMIT 5;
+```
+
+m..."
+2025-05-20 13:33:24 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 13:33:24 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:33:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:34:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:34:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:35:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:35:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:36:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:36:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:37:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:37:58 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:38:28 info: Generating embedding using model: nomic-embed-text
+2025-05-20 13:38:58 info: Generating embedding using model: nomic-embed-text
