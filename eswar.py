@@ -42,11 +42,24 @@ app = FastAPI(
 # Enable CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["*"],  # Allow all origins during development
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"]  # Expose all headers
 )
+
+# Add request logging middleware
+@app.middleware("http")
+async def log_requests(request: Request, call_next):
+    logger.info(f"Incoming request: {request.method} {request.url}")
+    try:
+        response = await call_next(request)
+        logger.info(f"Response status: {response.status_code}")
+        return response
+    except Exception as e:
+        logger.error(f"Request failed: {str(e)}")
+        raise
 
 # Pydantic Models
 class QueryRequest(BaseModel):
@@ -141,18 +154,24 @@ def get_database_schema() -> Dict[str, Any]:
         logger.error(f"Error getting database schema: {str(e)}")
         return {"tables": []}
 
-def generate_sql_with_ollama(natural_query: str, schema: Dict[str, Any]) -> str:
-    """Use Ollama to generate SQL from natural language query"""
+def generate_sql_with_ollama(query: str, schema: Dict[str, Any]) -> str:
+    """Generate SQL query from natural language using Ollama."""
     try:
-        # Prepare the prompt with schema information
-        schema_str = json.dumps(schema, indent=2)
+        # Prepare the prompt for Ollama
         prompt = f"""Given the following database schema:
-{schema_str}
+{json.dumps(schema, indent=2)}
 
-Convert this natural language query to SQL:
-{natural_query}
+Generate a valid PostgreSQL SQL query for this question: {query}
 
-Generate only the SQL query without any explanation. The query should be valid PostgreSQL syntax."""
+Rules:
+1. Only use tables that exist in the schema
+2. Return valid PostgreSQL syntax
+3. Do not include any explanations, only the SQL query
+4. Do not use backticks or any special characters
+5. Use proper table names from the schema
+6. If asking about users, use the correct table name from the schema
+
+SQL Query:"""
 
         # Call Ollama API
         response = requests.post(
@@ -165,23 +184,28 @@ Generate only the SQL query without any explanation. The query should be valid P
         )
         
         if response.status_code != 200:
-            raise Exception(f"Ollama API error: {response.text}")
-        
-        # Extract SQL from response
+            logger.error(f"Ollama API error: {response.text}")
+            raise Exception("Failed to generate SQL query")
+            
         result = response.json()
-        sql_query = result.get("response", "").strip()
+        sql_query = result.get('response', '').strip()
         
-        # Clean up the response to get only the SQL query
-        sql_query = re.sub(r'```sql\n?|\n?```', '', sql_query)
-        sql_query = sql_query.strip()
+        # Clean up the SQL query
+        # Remove any markdown code blocks
+        sql_query = re.sub(r'```sql|```', '', sql_query)
+        # Remove any explanatory text
+        sql_query = sql_query.split(';')[0] + ';'
+        # Remove any backticks
+        sql_query = sql_query.replace('`', '')
         
         logger.info(f"Generated SQL query: {sql_query}")
         return sql_query
+        
     except Exception as e:
-        logger.error(f"Error generating SQL with Ollama: {str(e)}")
+        logger.error(f"Error generating SQL: {str(e)}")
         raise Exception(f"Failed to generate SQL query: {str(e)}")
 
-@app.post("/api/execute")
+@app.post("/chat2sql/execute")
 async def execute_query_endpoint(request: Request):
     """Execute a natural language query and return the results."""
     try:
@@ -209,7 +233,11 @@ async def execute_query_endpoint(request: Request):
         # Execute query
         df = execute_sql(sql_query)
         
-        # Prepare response
+        # If the result is a list of tables, format it nicely
+        if "table_name" in df.columns:
+            df = df.sort_values("table_name")
+        
+        # Prepare response - include SQL query, data and columns
         response_data = {
             "sql": sql_query,
             "data": df.to_dict(orient='records'),

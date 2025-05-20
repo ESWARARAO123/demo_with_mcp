@@ -10,7 +10,11 @@ interface Chat2SQLResponse {
 export const chat2sqlService = {
   async executeQuery(query: string): Promise<Chat2SQLResponse> {
     try {
-      const response = await fetch(`${config.apiBaseUrl}/api/execute`, {
+      console.log('Sending query to Chat2SQL API:', query);
+      const apiUrl = 'http://localhost:5000/chat2sql/execute';
+      console.log('API URL:', apiUrl);
+      
+      const response = await fetch(apiUrl, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -18,15 +22,28 @@ export const chat2sqlService = {
         body: JSON.stringify({ query }),
       });
 
+      console.log('Response status:', response.status);
+      
       if (!response.ok) {
-        const errorData = await response.json();
-        throw new Error(errorData.detail || 'Failed to execute query');
+        const errorText = await response.text();
+        console.error('Error response:', errorText);
+        throw new Error(`Server error: ${errorText}`);
       }
 
       const data = await response.json();
+      console.log('Response data:', data);
+      
+      if (!data || !data.columns || !Array.isArray(data.data)) {
+        console.error('Invalid response format:', data);
+        throw new Error('Invalid response format from server');
+      }
+      
       return data;
     } catch (error) {
       console.error('Error executing query:', error);
+      if (error instanceof TypeError && error.message.includes('Failed to fetch')) {
+        throw new Error('Failed to connect to the server. Please check if the server is running at http://localhost:5000');
+      }
       throw error;
     }
   }

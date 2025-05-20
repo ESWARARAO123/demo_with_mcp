@@ -16432,3 +16432,1029 @@ You can access the server at: [0;32mhttp://localhost:8080[0m
 2025-05-17 14:59:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
 2025-05-17 14:59:56 info: Loaded Ollama settings from database
 2025-05-17 14:59:56 info: OllamaService initialized
+2025-05-17 18:05:10 info: Loaded Ollama settings from database
+2025-05-17 18:05:10 info: OllamaService initialized
+2025-05-17 18:05:10 info: RAG: OllamaService initialized successfully
+2025-05-17 18:14:29 error: Error setting up stream: Request failed with status code 404
+2025-05-17 18:14:34 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:25:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 11:25:42 info: Loaded Ollama settings from database
+2025-05-19 11:25:42 info: OllamaService initialized
+2025-05-19 11:29:03 info: Loaded Ollama settings from database
+2025-05-19 11:29:03 info: OllamaService initialized
+2025-05-19 11:29:03 info: RAG: OllamaService initialized successfully
+2025-05-19 11:29:47 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:29:51 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:30:24 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:30:25 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:31:07 info: Deleting RAG data for session 7e1d5458-8bd2-4fcb-abfa-d40512ff1d61 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 11:31:07 info: RAG data deletion result for session 7e1d5458-8bd2-4fcb-abfa-d40512ff1d61: Success
+2025-05-19 11:31:07 info: Successfully deleted RAG data for session 7e1d5458-8bd2-4fcb-abfa-d40512ff1d61
+2025-05-19 11:31:09 info: Deleting RAG data for session 1b445a17-a4a6-4544-90da-6fa4e4bb8815 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 11:31:09 info: RAG data deletion result for session 1b445a17-a4a6-4544-90da-6fa4e4bb8815: Success
+2025-05-19 11:31:09 info: Successfully deleted RAG data for session 1b445a17-a4a6-4544-90da-6fa4e4bb8815
+2025-05-19 11:31:13 info: Deleting RAG data for session 61349e91-b762-45d6-8b45-3b30747cb0b5 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 11:31:13 info: RAG data deletion result for session 61349e91-b762-45d6-8b45-3b30747cb0b5: Success
+2025-05-19 11:31:13 info: Successfully deleted RAG data for session 61349e91-b762-45d6-8b45-3b30747cb0b5
+2025-05-19 11:31:40 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:31:41 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:56:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 11:56:19 info: Loaded Ollama settings from database
+2025-05-19 11:56:19 info: OllamaService initialized
+2025-05-19 11:56:36 info: Loaded Ollama settings from database
+2025-05-19 11:56:36 info: OllamaService initialized
+2025-05-19 11:56:36 info: RAG: OllamaService initialized successfully
+2025-05-19 11:57:00 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:57:32 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:58:11 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:58:53 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:59:28 error: Error setting up stream: Request failed with status code 404
+2025-05-19 11:59:46 info: Deleting RAG data for session f5a24320-997e-47e7-b64d-90f045dc38dc requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 11:59:46 info: RAG data deletion result for session f5a24320-997e-47e7-b64d-90f045dc38dc: Success
+2025-05-19 11:59:46 info: Successfully deleted RAG data for session f5a24320-997e-47e7-b64d-90f045dc38dc
+2025-05-19 12:00:14 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:07:28 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:07:28 info: Loaded Ollama settings from database
+2025-05-19 12:07:28 info: OllamaService initialized
+2025-05-19 12:07:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:07:43 info: Loaded Ollama settings from database
+2025-05-19 12:07:43 info: OllamaService initialized
+2025-05-19 12:07:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:07:44 info: Loaded Ollama settings from database
+2025-05-19 12:07:44 info: OllamaService initialized
+2025-05-19 12:38:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:38:42 info: Loaded Ollama settings from database
+2025-05-19 12:38:42 info: OllamaService initialized
+2025-05-19 12:39:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:39:53 info: Loaded Ollama settings from database
+2025-05-19 12:39:53 info: OllamaService initialized
+2025-05-19 12:41:50 info: Loaded Ollama settings from database
+2025-05-19 12:41:50 info: OllamaService initialized
+2025-05-19 12:41:50 info: RAG: OllamaService initialized successfully
+2025-05-19 12:42:20 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:43:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:43:17 info: Loaded Ollama settings from database
+2025-05-19 12:43:17 info: OllamaService initialized
+2025-05-19 12:43:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:43:20 info: Loaded Ollama settings from database
+2025-05-19 12:43:20 info: OllamaService initialized
+2025-05-19 12:43:27 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:43:27 info: Loaded Ollama settings from database
+2025-05-19 12:43:27 info: OllamaService initialized
+2025-05-19 12:48:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:48:23 info: Loaded Ollama settings from database
+2025-05-19 12:48:23 info: OllamaService initialized
+2025-05-19 12:48:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:48:43 info: Loaded Ollama settings from database
+2025-05-19 12:48:43 info: OllamaService initialized
+2025-05-19 12:49:02 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:49:02 info: Loaded Ollama settings from database
+2025-05-19 12:49:02 info: OllamaService initialized
+2025-05-19 12:49:16 info: Loaded Ollama settings from database
+2025-05-19 12:49:16 info: OllamaService initialized
+2025-05-19 12:49:16 info: RAG: OllamaService initialized successfully
+2025-05-19 12:49:22 info: Deleting RAG data for session 88d19214-6ec9-404e-8acc-eecfba11c9c7 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:49:22 info: RAG data deletion result for session 88d19214-6ec9-404e-8acc-eecfba11c9c7: Success
+2025-05-19 12:49:22 info: Successfully deleted RAG data for session 88d19214-6ec9-404e-8acc-eecfba11c9c7
+2025-05-19 12:49:25 info: Deleting RAG data for session 0725b51f-3e37-4e2b-8295-b17038f9364d requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:49:25 info: RAG data deletion result for session 0725b51f-3e37-4e2b-8295-b17038f9364d: Success
+2025-05-19 12:49:25 info: Successfully deleted RAG data for session 0725b51f-3e37-4e2b-8295-b17038f9364d
+2025-05-19 12:50:36 info: Deleting RAG data for session c79b316b-9993-4319-8b52-cf0643a00ebf requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:50:36 info: RAG data deletion result for session c79b316b-9993-4319-8b52-cf0643a00ebf: Success
+2025-05-19 12:50:36 info: Successfully deleted RAG data for session c79b316b-9993-4319-8b52-cf0643a00ebf
+2025-05-19 12:50:52 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:50:52 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:52:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:52:52 info: Loaded Ollama settings from database
+2025-05-19 12:52:52 info: OllamaService initialized
+2025-05-19 12:53:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:53:15 info: Loaded Ollama settings from database
+2025-05-19 12:53:15 info: OllamaService initialized
+2025-05-19 12:53:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:53:21 info: Loaded Ollama settings from database
+2025-05-19 12:53:21 info: OllamaService initialized
+2025-05-19 12:53:32 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:53:32 info: Loaded Ollama settings from database
+2025-05-19 12:53:32 info: OllamaService initialized
+2025-05-19 12:54:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:54:51 info: Loaded Ollama settings from database
+2025-05-19 12:54:51 info: OllamaService initialized
+2025-05-19 12:54:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:54:54 info: Loaded Ollama settings from database
+2025-05-19 12:54:54 info: OllamaService initialized
+2025-05-19 12:55:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:55:19 info: Loaded Ollama settings from database
+2025-05-19 12:55:19 info: OllamaService initialized
+2025-05-19 12:55:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:55:55 info: Loaded Ollama settings from database
+2025-05-19 12:55:55 info: OllamaService initialized
+2025-05-19 12:55:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:55:56 info: Loaded Ollama settings from database
+2025-05-19 12:55:56 info: OllamaService initialized
+2025-05-19 12:56:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:56:16 info: Loaded Ollama settings from database
+2025-05-19 12:56:16 info: OllamaService initialized
+2025-05-19 12:56:34 info: Loaded Ollama settings from database
+2025-05-19 12:56:34 info: OllamaService initialized
+2025-05-19 12:56:34 info: RAG: OllamaService initialized successfully
+2025-05-19 12:56:55 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:56:55 error: Error setting up stream: Request failed with status code 404
+2025-05-19 12:58:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:58:19 info: Loaded Ollama settings from database
+2025-05-19 12:58:19 info: OllamaService initialized
+2025-05-19 12:59:28 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 12:59:28 info: Loaded Ollama settings from database
+2025-05-19 12:59:28 info: OllamaService initialized
+2025-05-19 12:59:40 info: Loaded Ollama settings from database
+2025-05-19 12:59:40 info: OllamaService initialized
+2025-05-19 12:59:40 info: RAG: OllamaService initialized successfully
+2025-05-19 12:59:45 info: Deleting RAG data for session da950cb7-a545-4364-a8d6-16a981a0f1b5 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:59:45 info: RAG data deletion result for session da950cb7-a545-4364-a8d6-16a981a0f1b5: Success
+2025-05-19 12:59:45 info: Successfully deleted RAG data for session da950cb7-a545-4364-a8d6-16a981a0f1b5
+2025-05-19 12:59:49 info: Deleting RAG data for session e1aa3cfa-e3d8-45b1-8f55-5eb509ea4be1 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:59:49 info: RAG data deletion result for session e1aa3cfa-e3d8-45b1-8f55-5eb509ea4be1: Success
+2025-05-19 12:59:49 info: Successfully deleted RAG data for session e1aa3cfa-e3d8-45b1-8f55-5eb509ea4be1
+2025-05-19 12:59:52 info: Deleting RAG data for session be53646d-c10b-4f54-981c-3f9edec239ed requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 12:59:52 info: RAG data deletion result for session be53646d-c10b-4f54-981c-3f9edec239ed: Success
+2025-05-19 12:59:52 info: Successfully deleted RAG data for session be53646d-c10b-4f54-981c-3f9edec239ed
+2025-05-19 13:00:25 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:00:25 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:00:54 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:01:06 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:01:06 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:03:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:03:10 info: Loaded Ollama settings from database
+2025-05-19 13:03:10 info: OllamaService initialized
+2025-05-19 13:04:39 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:04:39 info: Loaded Ollama settings from database
+2025-05-19 13:04:39 info: OllamaService initialized
+2025-05-19 13:04:55 info: Loaded Ollama settings from database
+2025-05-19 13:04:55 info: OllamaService initialized
+2025-05-19 13:04:55 info: RAG: OllamaService initialized successfully
+2025-05-19 13:04:58 info: Deleting RAG data for session eece6738-d667-4c81-a464-f6dbb275ff9c requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:04:58 info: RAG data deletion result for session eece6738-d667-4c81-a464-f6dbb275ff9c: Success
+2025-05-19 13:04:58 info: Successfully deleted RAG data for session eece6738-d667-4c81-a464-f6dbb275ff9c
+2025-05-19 13:05:01 info: Deleting RAG data for session bfeddea5-e382-4228-9e1d-140c9ee9e001 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:05:01 info: RAG data deletion result for session bfeddea5-e382-4228-9e1d-140c9ee9e001: Success
+2025-05-19 13:05:01 info: Successfully deleted RAG data for session bfeddea5-e382-4228-9e1d-140c9ee9e001
+2025-05-19 13:05:33 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:05:33 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:06:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:06:55 info: Loaded Ollama settings from database
+2025-05-19 13:06:55 info: OllamaService initialized
+2025-05-19 13:07:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:07:26 info: Loaded Ollama settings from database
+2025-05-19 13:07:26 info: OllamaService initialized
+2025-05-19 13:08:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:08:52 info: Loaded Ollama settings from database
+2025-05-19 13:08:52 info: OllamaService initialized
+2025-05-19 13:09:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:09:21 info: Loaded Ollama settings from database
+2025-05-19 13:09:21 info: OllamaService initialized
+2025-05-19 13:09:51 info: Loaded Ollama settings from database
+2025-05-19 13:09:51 info: OllamaService initialized
+2025-05-19 13:09:51 info: RAG: OllamaService initialized successfully
+2025-05-19 13:09:55 info: Deleting RAG data for session 0cd86dd7-85f9-4590-97ee-fba1fb8807b0 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:09:55 info: RAG data deletion result for session 0cd86dd7-85f9-4590-97ee-fba1fb8807b0: Success
+2025-05-19 13:09:55 info: Successfully deleted RAG data for session 0cd86dd7-85f9-4590-97ee-fba1fb8807b0
+2025-05-19 13:09:58 info: Deleting RAG data for session 0372d959-eed9-485b-a10b-424bc191ab89 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:09:58 info: RAG data deletion result for session 0372d959-eed9-485b-a10b-424bc191ab89: Success
+2025-05-19 13:09:58 info: Successfully deleted RAG data for session 0372d959-eed9-485b-a10b-424bc191ab89
+2025-05-19 13:10:20 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:10:20 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:11:55 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:11:55 info: Loaded Ollama settings from database
+2025-05-19 13:11:55 info: OllamaService initialized
+2025-05-19 13:13:29 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:13:29 info: Loaded Ollama settings from database
+2025-05-19 13:13:29 info: OllamaService initialized
+2025-05-19 13:14:29 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:14:29 info: Loaded Ollama settings from database
+2025-05-19 13:14:29 info: OllamaService initialized
+2025-05-19 13:14:48 info: Loaded Ollama settings from database
+2025-05-19 13:14:48 info: OllamaService initialized
+2025-05-19 13:14:48 info: RAG: OllamaService initialized successfully
+2025-05-19 13:15:26 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:15:26 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:17:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:17:23 info: Loaded Ollama settings from database
+2025-05-19 13:17:23 info: OllamaService initialized
+2025-05-19 13:17:39 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:17:39 info: Loaded Ollama settings from database
+2025-05-19 13:17:39 info: OllamaService initialized
+2025-05-19 13:17:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:17:42 info: Loaded Ollama settings from database
+2025-05-19 13:17:42 info: OllamaService initialized
+2025-05-19 13:18:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:18:19 info: Loaded Ollama settings from database
+2025-05-19 13:18:19 info: OllamaService initialized
+2025-05-19 13:18:35 info: Loaded Ollama settings from database
+2025-05-19 13:18:35 info: OllamaService initialized
+2025-05-19 13:18:35 info: RAG: OllamaService initialized successfully
+2025-05-19 13:19:05 info: Deleting RAG data for session b9afe800-a7a7-4d4a-89e3-19b3fea4dc1d requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:19:05 info: RAG data deletion result for session b9afe800-a7a7-4d4a-89e3-19b3fea4dc1d: Success
+2025-05-19 13:19:05 info: Successfully deleted RAG data for session b9afe800-a7a7-4d4a-89e3-19b3fea4dc1d
+2025-05-19 13:19:07 info: Deleting RAG data for session 8f33eb1b-8849-425b-afc7-2370399ee676 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:19:07 info: RAG data deletion result for session 8f33eb1b-8849-425b-afc7-2370399ee676: Success
+2025-05-19 13:19:07 info: Successfully deleted RAG data for session 8f33eb1b-8849-425b-afc7-2370399ee676
+2025-05-19 13:19:30 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:19:30 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:24:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:24:15 info: Loaded Ollama settings from database
+2025-05-19 13:24:15 info: OllamaService initialized
+2025-05-19 13:25:05 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:25:05 info: Loaded Ollama settings from database
+2025-05-19 13:25:05 info: OllamaService initialized
+2025-05-19 13:25:17 info: Loaded Ollama settings from database
+2025-05-19 13:25:17 info: OllamaService initialized
+2025-05-19 13:25:17 info: RAG: OllamaService initialized successfully
+2025-05-19 13:25:39 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:25:39 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:26:48 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:26:48 info: Loaded Ollama settings from database
+2025-05-19 13:26:48 info: OllamaService initialized
+2025-05-19 13:26:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:26:50 info: Loaded Ollama settings from database
+2025-05-19 13:26:50 info: OllamaService initialized
+2025-05-19 13:27:03 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:27:03 info: Loaded Ollama settings from database
+2025-05-19 13:27:03 info: OllamaService initialized
+2025-05-19 13:32:04 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:32:05 info: Loaded Ollama settings from database
+2025-05-19 13:32:05 info: OllamaService initialized
+2025-05-19 13:32:16 info: Loaded Ollama settings from database
+2025-05-19 13:32:16 info: OllamaService initialized
+2025-05-19 13:32:16 info: RAG: OllamaService initialized successfully
+2025-05-19 13:32:21 info: Deleting RAG data for session 62b23362-9b2c-4351-8281-2be708338c3c requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:32:21 info: RAG data deletion result for session 62b23362-9b2c-4351-8281-2be708338c3c: Success
+2025-05-19 13:32:21 info: Successfully deleted RAG data for session 62b23362-9b2c-4351-8281-2be708338c3c
+2025-05-19 13:32:23 info: Deleting RAG data for session 4e8c2e94-4086-4e25-b094-b661e16da7be requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:32:23 info: RAG data deletion result for session 4e8c2e94-4086-4e25-b094-b661e16da7be: Success
+2025-05-19 13:32:23 info: Successfully deleted RAG data for session 4e8c2e94-4086-4e25-b094-b661e16da7be
+2025-05-19 13:32:42 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:32:42 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:33:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:33:47 info: Loaded Ollama settings from database
+2025-05-19 13:33:47 info: OllamaService initialized
+2025-05-19 13:33:48 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:33:48 info: Loaded Ollama settings from database
+2025-05-19 13:33:48 info: OllamaService initialized
+2025-05-19 13:35:08 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:35:08 info: Loaded Ollama settings from database
+2025-05-19 13:35:08 info: OllamaService initialized
+2025-05-19 13:35:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:35:31 info: Loaded Ollama settings from database
+2025-05-19 13:35:31 info: OllamaService initialized
+2025-05-19 13:35:43 info: Loaded Ollama settings from database
+2025-05-19 13:35:43 info: OllamaService initialized
+2025-05-19 13:35:43 info: RAG: OllamaService initialized successfully
+2025-05-19 13:36:08 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:36:29 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:36:29 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:38:25 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:38:25 info: Loaded Ollama settings from database
+2025-05-19 13:38:25 info: OllamaService initialized
+2025-05-19 13:38:40 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:38:40 info: Loaded Ollama settings from database
+2025-05-19 13:38:40 info: OllamaService initialized
+2025-05-19 13:39:17 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:39:17 info: Loaded Ollama settings from database
+2025-05-19 13:39:17 info: OllamaService initialized
+2025-05-19 13:39:28 info: Loaded Ollama settings from database
+2025-05-19 13:39:28 info: OllamaService initialized
+2025-05-19 13:39:28 info: RAG: OllamaService initialized successfully
+2025-05-19 13:39:46 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:39:46 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:40:58 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:40:58 info: Loaded Ollama settings from database
+2025-05-19 13:40:58 info: OllamaService initialized
+2025-05-19 13:41:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:41:14 info: Loaded Ollama settings from database
+2025-05-19 13:41:14 info: OllamaService initialized
+2025-05-19 13:41:53 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:41:53 info: Loaded Ollama settings from database
+2025-05-19 13:41:53 info: OllamaService initialized
+2025-05-19 13:42:21 info: Loaded Ollama settings from database
+2025-05-19 13:42:21 info: OllamaService initialized
+2025-05-19 13:42:21 info: RAG: OllamaService initialized successfully
+2025-05-19 13:42:40 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:42:40 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:43:48 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:43:48 info: Loaded Ollama settings from database
+2025-05-19 13:43:48 info: OllamaService initialized
+2025-05-19 13:43:57 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:43:57 info: Loaded Ollama settings from database
+2025-05-19 13:43:57 info: OllamaService initialized
+2025-05-19 13:44:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:44:06 info: Loaded Ollama settings from database
+2025-05-19 13:44:06 info: OllamaService initialized
+2025-05-19 13:45:24 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:45:24 info: Loaded Ollama settings from database
+2025-05-19 13:45:24 info: OllamaService initialized
+2025-05-19 13:45:44 info: Loaded Ollama settings from database
+2025-05-19 13:45:44 info: OllamaService initialized
+2025-05-19 13:45:44 info: RAG: OllamaService initialized successfully
+2025-05-19 13:45:58 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:45:58 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:48:47 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:48:47 info: Loaded Ollama settings from database
+2025-05-19 13:48:47 info: OllamaService initialized
+2025-05-19 13:48:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:48:54 info: Loaded Ollama settings from database
+2025-05-19 13:48:54 info: OllamaService initialized
+2025-05-19 13:49:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:49:46 info: Loaded Ollama settings from database
+2025-05-19 13:49:46 info: OllamaService initialized
+2025-05-19 13:49:59 info: Loaded Ollama settings from database
+2025-05-19 13:49:59 info: OllamaService initialized
+2025-05-19 13:49:59 info: RAG: OllamaService initialized successfully
+2025-05-19 13:50:15 info: Deleting RAG data for session 8e789ccb-a1ff-4d09-9c40-5414875d0868 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:50:15 info: RAG data deletion result for session 8e789ccb-a1ff-4d09-9c40-5414875d0868: Success
+2025-05-19 13:50:15 info: Successfully deleted RAG data for session 8e789ccb-a1ff-4d09-9c40-5414875d0868
+2025-05-19 13:50:23 info: Deleting RAG data for session fe643790-43cb-412f-ad4b-9b2eb2280ae4 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:50:23 info: RAG data deletion result for session fe643790-43cb-412f-ad4b-9b2eb2280ae4: Success
+2025-05-19 13:50:23 info: Successfully deleted RAG data for session fe643790-43cb-412f-ad4b-9b2eb2280ae4
+2025-05-19 13:50:29 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:50:29 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:51:13 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:51:13 info: Loaded Ollama settings from database
+2025-05-19 13:51:13 info: OllamaService initialized
+2025-05-19 13:51:31 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:51:31 info: Loaded Ollama settings from database
+2025-05-19 13:51:31 info: OllamaService initialized
+2025-05-19 13:51:32 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:51:32 info: Loaded Ollama settings from database
+2025-05-19 13:51:32 info: OllamaService initialized
+2025-05-19 13:51:49 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:51:50 info: Loaded Ollama settings from database
+2025-05-19 13:51:50 info: OllamaService initialized
+2025-05-19 13:51:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:51:51 info: Loaded Ollama settings from database
+2025-05-19 13:51:51 info: OllamaService initialized
+2025-05-19 13:52:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:52:22 info: Loaded Ollama settings from database
+2025-05-19 13:52:22 info: OllamaService initialized
+2025-05-19 13:52:33 info: Loaded Ollama settings from database
+2025-05-19 13:52:33 info: OllamaService initialized
+2025-05-19 13:52:33 info: RAG: OllamaService initialized successfully
+2025-05-19 13:52:40 info: Deleting RAG data for session 7163ebf4-fb77-43a4-8f1f-dbbb98ad9ef5 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:52:40 info: RAG data deletion result for session 7163ebf4-fb77-43a4-8f1f-dbbb98ad9ef5: Success
+2025-05-19 13:52:40 info: Successfully deleted RAG data for session 7163ebf4-fb77-43a4-8f1f-dbbb98ad9ef5
+2025-05-19 13:52:44 info: Deleting RAG data for session 39f05019-0a3e-481d-bbc6-20bed737029d requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:52:44 info: RAG data deletion result for session 39f05019-0a3e-481d-bbc6-20bed737029d: Success
+2025-05-19 13:52:44 info: Successfully deleted RAG data for session 39f05019-0a3e-481d-bbc6-20bed737029d
+2025-05-19 13:53:01 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:53:01 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:53:57 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:53:57 info: Loaded Ollama settings from database
+2025-05-19 13:53:57 info: OllamaService initialized
+2025-05-19 13:54:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:54:16 info: Loaded Ollama settings from database
+2025-05-19 13:54:16 info: OllamaService initialized
+2025-05-19 13:56:22 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:56:22 info: Loaded Ollama settings from database
+2025-05-19 13:56:22 info: OllamaService initialized
+2025-05-19 13:56:34 info: Loaded Ollama settings from database
+2025-05-19 13:56:34 info: OllamaService initialized
+2025-05-19 13:56:34 info: RAG: OllamaService initialized successfully
+2025-05-19 13:56:40 info: Deleting RAG data for session 703a5ede-69f0-4f0f-bb3a-1082ac65dc4b requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:56:40 info: RAG data deletion result for session 703a5ede-69f0-4f0f-bb3a-1082ac65dc4b: Success
+2025-05-19 13:56:40 info: Successfully deleted RAG data for session 703a5ede-69f0-4f0f-bb3a-1082ac65dc4b
+2025-05-19 13:56:43 info: Deleting RAG data for session 6e3a07be-4ee3-45c0-9df9-392cb614116e requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 13:56:43 info: RAG data deletion result for session 6e3a07be-4ee3-45c0-9df9-392cb614116e: Success
+2025-05-19 13:56:43 info: Successfully deleted RAG data for session 6e3a07be-4ee3-45c0-9df9-392cb614116e
+2025-05-19 13:57:07 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:57:07 error: Error setting up stream: Request failed with status code 404
+2025-05-19 13:59:29 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 13:59:29 info: Loaded Ollama settings from database
+2025-05-19 13:59:29 info: OllamaService initialized
+2025-05-19 14:00:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:00:12 info: Loaded Ollama settings from database
+2025-05-19 14:00:12 info: OllamaService initialized
+2025-05-19 14:00:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:00:15 info: Loaded Ollama settings from database
+2025-05-19 14:00:15 info: OllamaService initialized
+2025-05-19 14:23:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:23:23 info: Loaded Ollama settings from database
+2025-05-19 14:23:23 info: OllamaService initialized
+2025-05-19 14:23:36 info: Loaded Ollama settings from database
+2025-05-19 14:23:36 info: OllamaService initialized
+2025-05-19 14:23:36 info: RAG: OllamaService initialized successfully
+2025-05-19 14:23:46 info: Deleting RAG data for session ef0ae637-c926-4970-a73d-38c9e6f08b80 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 14:23:46 info: RAG data deletion result for session ef0ae637-c926-4970-a73d-38c9e6f08b80: Success
+2025-05-19 14:23:46 info: Successfully deleted RAG data for session ef0ae637-c926-4970-a73d-38c9e6f08b80
+2025-05-19 14:23:50 info: Deleting RAG data for session f9c3a934-61f1-4860-8bd8-e2d60f98ea27 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 14:23:50 info: RAG data deletion result for session f9c3a934-61f1-4860-8bd8-e2d60f98ea27: Success
+2025-05-19 14:23:50 info: Successfully deleted RAG data for session f9c3a934-61f1-4860-8bd8-e2d60f98ea27
+2025-05-19 14:24:17 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:24:17 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:26:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:26:23 info: Loaded Ollama settings from database
+2025-05-19 14:26:23 info: OllamaService initialized
+2025-05-19 14:33:46 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:33:46 info: Loaded Ollama settings from database
+2025-05-19 14:33:46 info: OllamaService initialized
+2025-05-19 14:34:03 info: Loaded Ollama settings from database
+2025-05-19 14:34:03 info: OllamaService initialized
+2025-05-19 14:34:03 info: RAG: OllamaService initialized successfully
+2025-05-19 14:34:09 info: Deleting RAG data for session 056f865a-c2fe-42af-bba3-e8106ca8929f requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 14:34:09 info: RAG data deletion result for session 056f865a-c2fe-42af-bba3-e8106ca8929f: Success
+2025-05-19 14:34:09 info: Successfully deleted RAG data for session 056f865a-c2fe-42af-bba3-e8106ca8929f
+2025-05-19 14:34:12 info: Deleting RAG data for session e6e66309-dccc-4404-b924-af8b2552d4c2 requested by user 60d5f24d-64c1-4119-a73b-31b06c54b410
+2025-05-19 14:34:12 info: RAG data deletion result for session e6e66309-dccc-4404-b924-af8b2552d4c2: Success
+2025-05-19 14:34:12 info: Successfully deleted RAG data for session e6e66309-dccc-4404-b924-af8b2552d4c2
+2025-05-19 14:34:43 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:34:43 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:39:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:39:10 info: Loaded Ollama settings from database
+2025-05-19 14:39:10 info: OllamaService initialized
+2025-05-19 14:39:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:39:42 info: Loaded Ollama settings from database
+2025-05-19 14:39:42 info: OllamaService initialized
+2025-05-19 14:39:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:39:45 info: Loaded Ollama settings from database
+2025-05-19 14:39:45 info: OllamaService initialized
+2025-05-19 14:40:13 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:40:13 info: Loaded Ollama settings from database
+2025-05-19 14:40:13 info: OllamaService initialized
+2025-05-19 14:40:32 info: Loaded Ollama settings from database
+2025-05-19 14:40:32 info: OllamaService initialized
+2025-05-19 14:40:32 info: RAG: OllamaService initialized successfully
+2025-05-19 14:40:59 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:41:06 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:42:34 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:42:34 info: Loaded Ollama settings from database
+2025-05-19 14:42:34 info: OllamaService initialized
+2025-05-19 14:44:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:44:21 info: Loaded Ollama settings from database
+2025-05-19 14:44:21 info: OllamaService initialized
+2025-05-19 14:44:35 info: Loaded Ollama settings from database
+2025-05-19 14:44:35 info: OllamaService initialized
+2025-05-19 14:44:35 info: RAG: OllamaService initialized successfully
+2025-05-19 14:44:48 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:44:51 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:47:43 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:47:43 info: Loaded Ollama settings from database
+2025-05-19 14:47:43 info: OllamaService initialized
+2025-05-19 14:47:48 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:47:48 info: Loaded Ollama settings from database
+2025-05-19 14:47:48 info: OllamaService initialized
+2025-05-19 14:48:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:48:14 info: Loaded Ollama settings from database
+2025-05-19 14:48:14 info: OllamaService initialized
+2025-05-19 14:50:30 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:50:30 info: Loaded Ollama settings from database
+2025-05-19 14:50:30 info: OllamaService initialized
+2025-05-19 14:50:47 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:50:47 info: Loaded Ollama settings from database
+2025-05-19 14:50:47 info: OllamaService initialized
+2025-05-19 14:51:00 info: Loaded Ollama settings from database
+2025-05-19 14:51:00 info: OllamaService initialized
+2025-05-19 14:51:00 info: RAG: OllamaService initialized successfully
+2025-05-19 14:52:07 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:52:13 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:55:10 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:55:11 info: Loaded Ollama settings from database
+2025-05-19 14:55:11 info: OllamaService initialized
+2025-05-19 14:55:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 14:55:44 info: Loaded Ollama settings from database
+2025-05-19 14:55:44 info: OllamaService initialized
+2025-05-19 14:55:56 info: Loaded Ollama settings from database
+2025-05-19 14:55:56 info: OllamaService initialized
+2025-05-19 14:55:56 info: RAG: OllamaService initialized successfully
+2025-05-19 14:56:26 error: Error setting up stream: Request failed with status code 404
+2025-05-19 14:56:30 error: Error setting up stream: Request failed with status code 404
+2025-05-19 16:01:07 info: Loaded Ollama settings from database
+2025-05-19 17:15:34 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:15:34 info: Loaded Ollama settings from database
+2025-05-19 17:15:34 info: OllamaService initialized
+2025-05-19 17:15:52 info: Loaded Ollama settings from database
+2025-05-19 17:15:52 info: OllamaService initialized
+2025-05-19 17:15:52 info: RAG: OllamaService initialized successfully
+2025-05-19 17:15:56 info: Loaded Ollama settings from database
+2025-05-19 17:27:03 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:27:03 info: Loaded Ollama settings from database
+2025-05-19 17:27:03 info: OllamaService initialized
+2025-05-19 17:27:23 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:27:23 info: Loaded Ollama settings from database
+2025-05-19 17:27:23 info: OllamaService initialized
+2025-05-19 17:27:38 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:27:38 info: Loaded Ollama settings from database
+2025-05-19 17:27:38 info: OllamaService initialized
+2025-05-19 17:28:57 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:28:57 info: Loaded Ollama settings from database
+2025-05-19 17:28:57 info: OllamaService initialized
+2025-05-19 17:29:33 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-19 17:29:33 info: Loaded Ollama settings from database
+2025-05-19 17:29:33 info: OllamaService initialized
+2025-05-20 10:48:05 info: Loaded Ollama settings from database
+2025-05-20 10:48:05 info: OllamaService initialized
+2025-05-20 10:48:05 info: RAG: OllamaService initialized successfully
+2025-05-20 10:48:05 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:48:05 info: Loaded Ollama settings from database
+2025-05-20 10:48:05 info: OllamaService initialized
+2025-05-20 10:48:05 info: RAG: OllamaService initialized successfully
+2025-05-20 10:48:35 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:49:39 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 10:49:39 info: Loaded Ollama settings from database
+2025-05-20 10:49:39 info: OllamaService initialized
+2025-05-20 10:50:03 info: Loaded Ollama settings from database
+2025-05-20 10:50:03 info: OllamaService initialized
+2025-05-20 10:50:03 info: RAG: OllamaService initialized successfully
+2025-05-20 10:50:04 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:50:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:50:55 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:50:55 info: RAG is available, processing chat message: "give me the list of tables available in my databas..."
+2025-05-20 10:50:55 info: Using session context: 471e7927-16ac-4883-aac8-6464921d4822
+2025-05-20 10:50:55 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:51:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:51:02 info: RAG is available, processing chat message: "SQL Query:
+```sql
+SELECT table_name FROM informati..."
+2025-05-20 10:51:02 info: Using session context: 471e7927-16ac-4883-aac8-6464921d4822
+2025-05-20 10:51:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:51:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:51:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:52:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:52:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:53:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:53:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:54:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:54:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:55:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:55:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:56:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:56:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:57:03 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:57:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:57:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 10:57:54 info: Loaded Ollama settings from database
+2025-05-20 10:57:54 info: OllamaService initialized
+2025-05-20 10:57:56 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 10:57:56 info: Loaded Ollama settings from database
+2025-05-20 10:57:56 info: OllamaService initialized
+2025-05-20 10:58:14 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 10:58:14 info: Loaded Ollama settings from database
+2025-05-20 10:58:14 info: OllamaService initialized
+2025-05-20 10:58:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 10:58:45 info: Loaded Ollama settings from database
+2025-05-20 10:58:45 info: OllamaService initialized
+2025-05-20 10:59:02 info: Loaded Ollama settings from database
+2025-05-20 10:59:02 info: OllamaService initialized
+2025-05-20 10:59:02 info: RAG: OllamaService initialized successfully
+2025-05-20 10:59:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 10:59:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:36 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:36 info: RAG is available, processing chat message: "what are the similar metric values in place
+_qor a..."
+2025-05-20 11:00:36 info: Using session context: f02b18cf-de07-4cab-8a67-e79dc2c87819
+2025-05-20 11:00:36 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:44 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:00:44 info: RAG is available, processing chat message: "Error: Server error: {"detail":"Failed to execute ..."
+2025-05-20 11:00:44 info: Using session context: f02b18cf-de07-4cab-8a67-e79dc2c87819
+2025-05-20 11:00:44 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:01:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:01:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:02:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:02:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:02:15 info: Loaded Ollama settings from database
+2025-05-20 11:02:15 info: OllamaService initialized
+2025-05-20 11:02:18 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:02:18 info: Loaded Ollama settings from database
+2025-05-20 11:02:18 info: OllamaService initialized
+2025-05-20 11:02:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:02:26 info: Loaded Ollama settings from database
+2025-05-20 11:02:26 info: OllamaService initialized
+2025-05-20 11:03:21 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:03:22 info: Loaded Ollama settings from database
+2025-05-20 11:03:22 info: OllamaService initialized
+2025-05-20 11:03:37 info: Loaded Ollama settings from database
+2025-05-20 11:03:37 info: OllamaService initialized
+2025-05-20 11:03:37 info: RAG: OllamaService initialized successfully
+2025-05-20 11:03:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:15 info: RAG is available, processing chat message: "what are similar metrics in fp_qor and place_qor t..."
+2025-05-20 11:04:15 info: Using session context: 62743349-6d70-4041-96b2-30939f356b08
+2025-05-20 11:04:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:45 info: RAG is available, processing chat message: "what are similar metrics in fp_qor and place_qor t..."
+2025-05-20 11:04:45 info: Using session context: 62743349-6d70-4041-96b2-30939f356b08
+2025-05-20 11:04:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:04:47 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:06:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:06:16 info: Loaded Ollama settings from database
+2025-05-20 11:06:16 info: OllamaService initialized
+2025-05-20 11:06:33 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:06:33 info: Loaded Ollama settings from database
+2025-05-20 11:06:33 info: OllamaService initialized
+2025-05-20 11:07:09 info: Loaded Ollama settings from database
+2025-05-20 11:07:09 info: OllamaService initialized
+2025-05-20 11:07:09 info: RAG: OllamaService initialized successfully
+2025-05-20 11:07:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:09:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:09:20 info: Loaded Ollama settings from database
+2025-05-20 11:09:20 info: OllamaService initialized
+2025-05-20 11:09:37 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:09:37 info: Loaded Ollama settings from database
+2025-05-20 11:09:37 info: OllamaService initialized
+2025-05-20 11:09:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:09:44 info: Loaded Ollama settings from database
+2025-05-20 11:09:44 info: OllamaService initialized
+2025-05-20 11:09:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:09:45 info: Loaded Ollama settings from database
+2025-05-20 11:09:45 info: OllamaService initialized
+2025-05-20 11:09:54 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:09:54 info: Loaded Ollama settings from database
+2025-05-20 11:09:54 info: OllamaService initialized
+2025-05-20 11:10:01 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:10:01 info: Loaded Ollama settings from database
+2025-05-20 11:10:01 info: OllamaService initialized
+2025-05-20 11:10:29 info: Loaded Ollama settings from database
+2025-05-20 11:10:29 info: OllamaService initialized
+2025-05-20 11:10:29 info: RAG: OllamaService initialized successfully
+2025-05-20 11:10:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:10:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:12 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:12 info: RAG is available, processing chat message: "what are the common metrics in place_qor and fp_qo..."
+2025-05-20 11:11:12 info: Using session context: e0a37397-a81d-4fc6-8ca6-b2ef53aac11b
+2025-05-20 11:11:12 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:20 info: RAG is available, processing chat message: "```sql
+SELECT metrics FROM fp_qor_csv
+   UNION ALL..."
+2025-05-20 11:11:20 info: Using session context: e0a37397-a81d-4fc6-8ca6-b2ef53aac11b
+2025-05-20 11:11:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:11:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:12:29 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:12:59 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:13:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:13:26 info: Loaded Ollama settings from database
+2025-05-20 11:13:26 info: OllamaService initialized
+2025-05-20 11:13:28 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:13:28 info: Loaded Ollama settings from database
+2025-05-20 11:13:28 info: OllamaService initialized
+2025-05-20 11:13:44 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:13:44 info: Loaded Ollama settings from database
+2025-05-20 11:13:44 info: OllamaService initialized
+2025-05-20 11:14:06 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:14:06 info: Loaded Ollama settings from database
+2025-05-20 11:14:06 info: OllamaService initialized
+2025-05-20 11:14:20 info: Loaded Ollama settings from database
+2025-05-20 11:14:20 info: OllamaService initialized
+2025-05-20 11:14:20 info: RAG: OllamaService initialized successfully
+2025-05-20 11:14:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:14:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:15:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:15:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:16:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:16:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:17:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:17:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:18:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:18:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:01 info: RAG is available, processing chat message: "what are the common metric values in fp_qor table ..."
+2025-05-20 11:19:01 info: Using session context: 2084544c-d294-4302-841d-5d9497394d66
+2025-05-20 11:19:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:10 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:10 info: RAG is available, processing chat message: "```sql
+SELECT metrics FROM fp_qor_csv
+   UNION ALL..."
+2025-05-20 11:19:10 info: Using session context: 2084544c-d294-4302-841d-5d9497394d66
+2025-05-20 11:19:10 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:19:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:20:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:20:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:21:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:21:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:22:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:22:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:23:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:23:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:24:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:24:50 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:25:19 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:25:19 info: Loaded Ollama settings from database
+2025-05-20 11:25:19 info: OllamaService initialized
+2025-05-20 11:25:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:25:42 info: Loaded Ollama settings from database
+2025-05-20 11:25:42 info: OllamaService initialized
+2025-05-20 11:28:18 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:28:18 info: Loaded Ollama settings from database
+2025-05-20 11:28:18 info: OllamaService initialized
+2025-05-20 11:28:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:28:53 info: Loaded Ollama settings from database
+2025-05-20 11:28:53 info: OllamaService initialized
+2025-05-20 11:29:15 info: Loaded Ollama settings from database
+2025-05-20 11:29:15 info: OllamaService initialized
+2025-05-20 11:29:15 info: RAG: OllamaService initialized successfully
+2025-05-20 11:29:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:29:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:06 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:06 info: RAG is available, processing chat message: "give the first five rows in fp_qor table and place..."
+2025-05-20 11:30:06 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:30:06 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:13 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:13 info: RAG is available, processing chat message: "Query:
+```sql
+SELECT * FROM fp_qor_csv LIMIT 5;
+``..."
+2025-05-20 11:30:13 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:30:13 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:30:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:31:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:31:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:32:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:32:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:33:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:33:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:34:15 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:34:45 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:34:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:34:51 info: Loaded Ollama settings from database
+2025-05-20 11:34:51 info: OllamaService initialized
+2025-05-20 11:34:58 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:34:58 info: Loaded Ollama settings from database
+2025-05-20 11:34:58 info: OllamaService initialized
+2025-05-20 11:35:12 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:35:12 info: Loaded Ollama settings from database
+2025-05-20 11:35:12 info: OllamaService initialized
+2025-05-20 11:35:26 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:35:26 info: Loaded Ollama settings from database
+2025-05-20 11:35:26 info: OllamaService initialized
+2025-05-20 11:35:37 info: Loaded Ollama settings from database
+2025-05-20 11:35:37 info: OllamaService initialized
+2025-05-20 11:35:37 info: RAG: OllamaService initialized successfully
+2025-05-20 11:35:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:36 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:36 info: RAG is available, processing chat message: "what is the Buffer count value in fp_qor table..."
+2025-05-20 11:36:36 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:36:36 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:43 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:36:43 info: RAG is available, processing chat message: "Server error: {"detail":"Failed to execute query: ..."
+2025-05-20 11:36:43 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:36:43 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:19 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:19 info: RAG is available, processing chat message: "what is the Buffer count  value of floorplan in fp..."
+2025-05-20 11:37:19 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:37:19 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:22 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:22 info: RAG is available, processing chat message: "Query:
+```sql
+SELECT COUNT(floorplan) as buffer_co..."
+2025-05-20 11:37:22 info: Using session context: 1d3f1d64-b1f1-4c11-a279-b3b1512d19f2
+2025-05-20 11:37:22 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:37:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:38:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:38:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:39:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:39:37 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:39:42 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:39:42 info: Loaded Ollama settings from database
+2025-05-20 11:39:42 info: OllamaService initialized
+2025-05-20 11:39:50 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:39:50 info: Loaded Ollama settings from database
+2025-05-20 11:39:50 info: OllamaService initialized
+2025-05-20 11:40:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:40:15 info: Loaded Ollama settings from database
+2025-05-20 11:40:15 info: OllamaService initialized
+2025-05-20 11:40:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:40:16 info: Loaded Ollama settings from database
+2025-05-20 11:40:16 info: OllamaService initialized
+2025-05-20 11:40:35 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:40:35 info: Loaded Ollama settings from database
+2025-05-20 11:40:35 info: OllamaService initialized
+2025-05-20 11:41:02 info: Loaded Ollama settings from database
+2025-05-20 11:41:02 info: OllamaService initialized
+2025-05-20 11:41:02 info: RAG: OllamaService initialized successfully
+2025-05-20 11:41:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:41:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:41:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:41:33 info: RAG is available, processing chat message: "how many rows are there in place_qor table..."
+2025-05-20 11:41:33 info: Using session context: 471e7927-16ac-4883-aac8-6464921d4822
+2025-05-20 11:41:33 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:41:35 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:41:35 info: RAG is available, processing chat message: "Error: Server error: {"detail":"Failed to execute ..."
+2025-05-20 11:41:35 info: Using session context: 471e7927-16ac-4883-aac8-6464921d4822
+2025-05-20 11:41:35 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:42:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:42:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:43:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:43:32 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:44:02 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:44:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:44:15 info: Loaded Ollama settings from database
+2025-05-20 11:44:15 info: OllamaService initialized
+2025-05-20 11:44:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:44:20 info: Loaded Ollama settings from database
+2025-05-20 11:44:20 info: OllamaService initialized
+2025-05-20 11:44:41 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:44:41 info: Loaded Ollama settings from database
+2025-05-20 11:44:41 info: OllamaService initialized
+2025-05-20 11:45:20 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:45:21 info: Loaded Ollama settings from database
+2025-05-20 11:45:21 info: OllamaService initialized
+2025-05-20 11:45:41 info: Loaded Ollama settings from database
+2025-05-20 11:45:41 info: OllamaService initialized
+2025-05-20 11:45:41 info: RAG: OllamaService initialized successfully
+2025-05-20 11:45:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:07 info: RAG is available, processing chat message: "give the count of rows in place_qor table..."
+2025-05-20 11:46:07 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:46:07 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:10 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:10 info: RAG is available, processing chat message: "Query:
+```sql
+SELECT COUNT(*) FROM place_qor_csv;
+..."
+2025-05-20 11:46:10 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:46:10 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:46:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:47:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:47:41 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:48:11 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:48:16 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:48:16 info: Loaded Ollama settings from database
+2025-05-20 11:48:16 info: OllamaService initialized
+2025-05-20 11:48:28 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:48:28 info: Loaded Ollama settings from database
+2025-05-20 11:48:28 info: OllamaService initialized
+2025-05-20 11:48:53 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:48:53 info: Loaded Ollama settings from database
+2025-05-20 11:48:53 info: OllamaService initialized
+2025-05-20 11:49:17 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 11:49:17 info: Loaded Ollama settings from database
+2025-05-20 11:49:17 info: OllamaService initialized
+2025-05-20 11:49:31 info: Loaded Ollama settings from database
+2025-05-20 11:49:31 info: OllamaService initialized
+2025-05-20 11:49:31 info: RAG: OllamaService initialized successfully
+2025-05-20 11:49:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:04 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:04 info: RAG is available, processing chat message: "what are the columns in place_qor table..."
+2025-05-20 11:50:04 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:50:04 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:06 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:06 info: RAG is available, processing chat message: "Server error: {"detail":"Failed to execute query: ..."
+2025-05-20 11:50:06 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:50:06 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:35 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:36 info: RAG is available, processing chat message: "give me the number of columns place_qor table..."
+2025-05-20 11:50:36 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:50:36 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:38 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:50:38 info: RAG is available, processing chat message: "Query:
+```sql
+SELECT COUNT(*) FROM place_qor_csv;
+..."
+2025-05-20 11:50:38 info: Using session context: 26159186-56ac-4e59-813d-6a480511cad1
+2025-05-20 11:50:38 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:51:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:51:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:18 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:18 info: RAG is available, processing chat message: "give the first five rows in place_qor table..."
+2025-05-20 11:52:18 info: Using session context: 97c36f96-6562-4a8f-9936-7aba65766846
+2025-05-20 11:52:18 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:20 info: RAG is available, processing chat message: "Query:
+```sql
+SELECT * FROM place_qor_csv LIMIT 5;..."
+2025-05-20 11:52:20 info: Using session context: 97c36f96-6562-4a8f-9936-7aba65766846
+2025-05-20 11:52:20 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:52:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:53:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:53:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:54:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:54:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:55:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:55:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:56:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:56:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:57:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:57:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:58:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:58:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:59:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 11:59:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:00:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:00:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:01:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:01:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:02:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:02:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:03:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:03:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:04:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:04:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:05:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:05:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:06:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:06:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:07:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:07:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:08:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:08:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:09:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:09:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:10:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:10:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:11:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:11:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:12:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:12:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:13:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:13:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:14:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:14:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:15:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:15:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:16:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:16:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:17:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:17:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:18:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:18:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:19:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:19:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:20:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:20:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:21:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:21:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:22:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:22:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:23:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:23:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:24:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:24:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:25:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:25:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:26:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:26:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:27:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:27:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:28:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:28:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:29:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:29:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:30:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:30:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:31:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:31:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:32:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:32:31 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:33:01 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:33:15 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:33:15 info: Loaded Ollama settings from database
+2025-05-20 12:33:15 info: OllamaService initialized
+2025-05-20 12:33:45 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:33:45 info: Loaded Ollama settings from database
+2025-05-20 12:33:45 info: OllamaService initialized
+2025-05-20 12:33:51 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:33:51 info: Loaded Ollama settings from database
+2025-05-20 12:33:51 info: OllamaService initialized
+2025-05-20 12:33:52 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:33:53 info: Loaded Ollama settings from database
+2025-05-20 12:33:53 info: OllamaService initialized
+2025-05-20 12:34:08 info: Loading configuration from: /home/eswar/esw/productdemo-mcp/conf/config.ini
+2025-05-20 12:34:08 info: Loaded Ollama settings from database
+2025-05-20 12:34:08 info: OllamaService initialized
+2025-05-20 12:34:39 info: Loaded Ollama settings from database
+2025-05-20 12:34:39 info: OllamaService initialized
+2025-05-20 12:34:39 info: RAG: OllamaService initialized successfully
+2025-05-20 12:34:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:17 info: RAG is available, processing chat message: "what are the tables available in my database..."
+2025-05-20 12:35:17 info: Using session context: 1526084e-ce08-47e7-a8fc-fdb173927ab8
+2025-05-20 12:35:17 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:24 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:24 info: RAG is available, processing chat message: "```sql
+SELECT tablename FROM pg_tables WHERE table..."
+2025-05-20 12:35:24 info: Using session context: 1526084e-ce08-47e7-a8fc-fdb173927ab8
+2025-05-20 12:35:24 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:35:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:36:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:36:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:37:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:37:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:38:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:38:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:39:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:39:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:40:09 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:40:39 info: Generating embedding using model: nomic-embed-text
+2025-05-20 12:41:09 info: Generating embedding using model: nomic-embed-text

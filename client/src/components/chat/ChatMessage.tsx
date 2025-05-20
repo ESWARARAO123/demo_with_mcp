@@ -14,7 +14,8 @@ import {
   ArrowDownTrayIcon,
   InformationCircleIcon,
   ChevronDownIcon,
-  ChevronUpIcon
+  ChevronUpIcon,
+  TableCellsIcon
 } from '@heroicons/react/24/outline';
 import { messageBubbleStyles, markdownStyles } from './chatStyles';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -31,14 +32,13 @@ interface ChatMessageProps {
 const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
   const [copiedCode, setCopiedCode] = useState<string | null>(null);
   const [showSources, setShowSources] = useState<boolean>(false);
-  const { currentTheme } = useTheme();
-  const isDarkTheme = currentTheme !== 'light';
+  const { isDarkTheme } = useTheme();
 
   // Function to copy code to clipboard
   const copyToClipboard = (code: string) => {
     navigator.clipboard.writeText(code);
     setCopiedCode(code);
-    setTimeout(() => setCopiedCode(null), 2000); // Reset after 2 seconds
+    setTimeout(() => setCopiedCode(null), 2000);
   };
 
   // Format file size to human-readable format
@@ -48,6 +48,235 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
     const sizes = ['Bytes', 'KB', 'MB', 'GB'];
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+  };
+
+  // Determine if this is a system message (from Chat2SQL)
+  const isSystemMessage = message.content.includes('```sql') || message.content.startsWith('Error:') || message.content === 'No results found';
+
+  // Determine if this is a SQL response
+  const isSQLResponse = message.content.includes('```sql');
+
+  // Split SQL response into query and results
+  const splitSQLResponse = (content: string) => {
+    // If content starts with "Error:", it's just an error message
+    if (content.startsWith('Error:')) {
+      return { errorMessage: content, query: '', results: '' };
+    }
+
+    const parts = content.split('\n\n');
+    let query = '';
+    let results = '';
+    
+    // Extract query
+    if (parts[0].includes('```sql')) {
+      query = parts[0].replace(/```sql\n|\n```/g, '').trim();
+    }
+    
+    // Extract results
+    if (parts[1]) {
+      results = parts[1].trim();
+    }
+    
+    return { errorMessage: '', query, results };
+  };
+
+  // Render SQL response
+  const renderSQLResponse = (content: string) => {
+    const { errorMessage, query, results } = splitSQLResponse(content);
+    
+    // If it's just an error message, show it and return
+    if (errorMessage) {
+      return (
+        <div style={{
+          color: 'var(--color-error)',
+          fontSize: '0.95rem',
+          padding: '0.5rem',
+          backgroundColor: isDarkTheme ? 'rgba(255, 0, 0, 0.1)' : 'rgba(255, 0, 0, 0.05)',
+          borderRadius: '0.5rem'
+        }}>
+          {errorMessage}
+        </div>
+      );
+    }
+    
+    // Function to download table data as CSV
+    const downloadTableData = () => {
+      if (!results || results === 'No results found') return;
+      
+      // Parse the tab-separated data
+      const lines = results.split('\n');
+      const headers = lines[0].split('\t');
+      const data = lines.slice(1).map(line => line.split('\t'));
+      
+      // Create CSV content
+      const csvContent = [
+        headers.join(','),
+        ...data.map(row => row.join(','))
+      ].join('\n');
+      
+      // Create and trigger download
+      const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+      const link = document.createElement('a');
+      const url = URL.createObjectURL(blob);
+      link.setAttribute('href', url);
+      link.setAttribute('download', 'query_results.csv');
+      link.style.visibility = 'hidden';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    };
+    
+    return (
+      <div style={{ width: '100%' }}>
+        {/* SQL Query Box */}
+        {query && (
+          <div style={{
+            marginBottom: '1rem',
+            backgroundColor: isDarkTheme ? '#1e1e1e' : '#f8fafc',
+            borderRadius: '0.5rem',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              padding: '0.5rem 1rem',
+              backgroundColor: isDarkTheme ? '#252526' : '#f0f4f8',
+              borderBottom: `1px solid ${isDarkTheme ? '#3E3E42' : '#e2e8f0'}`,
+              display: 'flex',
+              justifyContent: 'flex-end',
+              alignItems: 'center'
+            }}>
+              <button
+                onClick={() => copyToClipboard(query)}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  color: copiedCode === query ? 'var(--color-success)' : isDarkTheme ? '#e6e6e6' : '#64748b',
+                  padding: '0.25rem',
+                  borderRadius: '0.25rem',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Copy SQL"
+              >
+                {copiedCode === query ? (
+                  <>
+                    <CheckIcon className="w-4 h-4 mr-1" /> Copied
+                  </>
+                ) : (
+                  <>
+                    <ClipboardDocumentIcon className="w-4 h-4 mr-1" /> Copy
+                  </>
+                )}
+              </button>
+            </div>
+            <SyntaxHighlighter
+              language="sql"
+              style={isDarkTheme ? vscDarkPlus : oneLight}
+              customStyle={{
+                margin: 0,
+                padding: '1rem',
+                fontSize: '0.9rem'
+              }}
+            >
+              {query}
+            </SyntaxHighlighter>
+          </div>
+        )}
+
+        {/* Results Box */}
+        {results && results !== 'No results found' && (
+          <div style={{
+            backgroundColor: isDarkTheme ? '#1e1e1e' : '#f8fafc',
+            borderRadius: '0.5rem',
+            overflow: 'hidden'
+          }}>
+            <div style={{
+              padding: '0.5rem 1rem',
+              backgroundColor: isDarkTheme ? '#252526' : '#f0f4f8',
+              borderBottom: `1px solid ${isDarkTheme ? '#3E3E42' : '#e2e8f0'}`,
+              display: 'flex',
+              justifyContent: 'flex-end',
+              alignItems: 'center'
+            }}>
+              <button
+                onClick={downloadTableData}
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                  color: isDarkTheme ? '#e6e6e6' : '#64748b',
+                  padding: '0.25rem',
+                  borderRadius: '0.25rem',
+                  transition: 'all 0.2s ease'
+                }}
+                title="Download Results"
+              >
+                <ArrowDownTrayIcon className="w-4 h-4 mr-1" /> Download
+              </button>
+            </div>
+            <div style={{ padding: '1rem', overflowX: 'auto' }}>
+              <table style={{
+                width: '100%',
+                borderCollapse: 'collapse',
+                fontSize: '0.9rem',
+                backgroundColor: isDarkTheme ? '#1e1e1e' : '#ffffff'
+              }}>
+                <thead>
+                  <tr>
+                    {results.split('\n')[0].split('\t').map((header, index) => (
+                      <th key={index} style={{
+                        padding: '0.75rem',
+                        textAlign: 'left',
+                        borderBottom: `2px solid ${isDarkTheme ? '#3E3E42' : '#e2e8f0'}`,
+                        backgroundColor: isDarkTheme ? '#252526' : '#f8fafc',
+                        color: isDarkTheme ? '#e6e6e6' : '#334155',
+                        fontWeight: 600,
+                        whiteSpace: 'nowrap'
+                      }}>
+                        {header}
+                      </th>
+                    ))}
+                  </tr>
+                </thead>
+                <tbody>
+                  {results.split('\n').slice(1).map((row, rowIndex) => (
+                    <tr key={rowIndex}>
+                      {row.split('\t').map((cell, cellIndex) => (
+                        <td key={cellIndex} style={{
+                          padding: '0.75rem',
+                          borderBottom: `1px solid ${isDarkTheme ? '#3E3E42' : '#e2e8f0'}`,
+                          color: isDarkTheme ? '#e6e6e6' : '#334155',
+                          whiteSpace: 'nowrap'
+                        }}>
+                          {cell}
+                        </td>
+                      ))}
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+        {/* No Results Message */}
+        {!results && query && (
+          <div style={{
+            color: 'var(--color-text)',
+            fontSize: '0.95rem',
+            marginTop: '1rem',
+            padding: '0.5rem',
+            backgroundColor: isDarkTheme ? 'rgba(255, 255, 255, 0.05)' : 'rgba(0, 0, 0, 0.05)',
+            borderRadius: '0.5rem'
+          }}>
+            No results found
+          </div>
+        )}
+      </div>
+    );
   };
 
   // Render code blocks with syntax highlighting and copy button
@@ -102,37 +331,20 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
             </button>
           </div>
           <SyntaxHighlighter
-            style={isDarkTheme ? vscDarkPlus : oneLight}
             language={match[1]}
-            PreTag="div"
-            {...props}
+            style={isDarkTheme ? vscDarkPlus : oneLight}
             customStyle={{
               margin: 0,
               borderRadius: '0 0 0.5rem 0.5rem',
-              fontSize: '0.9rem',
-              lineHeight: 1.5,
-              padding: '1rem',
-              backgroundColor: isDarkTheme ? '#1E1E1E' : '#f8fafc'
+              padding: '1rem'
             }}
-            codeTagProps={{
-              style: {
-                fontFamily: 'Menlo, Monaco, Consolas, "Courier New", monospace',
-              }
-            }}
+            {...props}
           >
             {code}
           </SyntaxHighlighter>
         </div>
       ) : (
-        <code style={{
-          ...messageBubbleStyles.ai.inlineCode,
-          backgroundColor: isDarkTheme ? 'var(--color-surface-dark)' : '#f1f5f9',
-          color: isDarkTheme ? 'var(--color-primary-light)' : 'var(--color-primary)',
-          padding: '0.1rem 0.3rem',
-          borderRadius: '0.25rem',
-          fontFamily: 'Menlo, Monaco, Consolas, "Courier New", monospace',
-          fontSize: '0.9em',
-        }} {...props}>
+        <code style={messageBubbleStyles.ai.inlineCode} {...props}>
           {children}
         </code>
       );
@@ -178,7 +390,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
       <div style={isAI ? messageBubbleStyles.ai.header : messageBubbleStyles.user.header}>
         {isAI ? (
           <div style={messageBubbleStyles.ai.avatar}>
-            AI
+            {isSQLResponse ? 'SQL' : isSystemMessage ? 'SQL' : 'AI'}
           </div>
         ) : (
           <div style={messageBubbleStyles.user.avatar}>
@@ -191,348 +403,28 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
       </div>
 
       <div style={isAI ? messageBubbleStyles.ai.content : messageBubbleStyles.user.content}>
-        {/* File attachment for user messages */}
-        {!isAI && message.fileAttachment && (
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            padding: '0.5rem',
-            backgroundColor: 'var(--color-surface-light)',
-            borderRadius: '0.5rem',
-            marginBottom: '0.5rem',
-            maxWidth: '100%',
-            overflow: 'hidden'
-          }}>
-            <div style={{ marginRight: '0.5rem' }}>
-              {message.fileAttachment.type === 'application/pdf' ? (
-                <DocumentTextIcon className="h-6 w-6 text-red-500" />
-              ) : message.fileAttachment.type === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document' ? (
-                <DocumentTextIcon className="h-6 w-6 text-blue-500" />
-              ) : message.fileAttachment.type === 'text/plain' ? (
-                <DocumentTextIcon className="h-6 w-6 text-gray-500" />
-              ) : (
-                <DocumentIcon className="h-6 w-6 text-gray-500" />
-              )}
-            </div>
-            <div style={{ flex: 1, minWidth: 0 }}>
-              <div style={{
-                fontWeight: 500,
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis'
-              }}>
-                {message.fileAttachment.name}
-              </div>
-              <div style={{
-                fontSize: '0.75rem',
-                display: 'flex',
-                alignItems: 'center',
-                color: message.fileAttachment.status === 'ERROR' ? 'var(--color-error)' : 'var(--color-text-muted)'
-              }}>
-                {formatFileSize(message.fileAttachment.size)}
-                {message.fileAttachment.status && (
-                  <>
-                    <span style={{ margin: '0 0.25rem' }}>•</span>
-                    <span style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      color: getStatusColor(message.fileAttachment.status)
-                    }}>
-                      {message.fileAttachment.status === 'PROCESSING' && (
-                        <span className="loading-dot-animation" style={{ marginRight: '0.25rem' }}></span>
-                      )}
-                      {message.fileAttachment.status === 'EMBEDDING' && (
-                        <span className="loading-dot-animation" style={{ marginRight: '0.25rem' }}></span>
-                      )}
-                      {getStatusText(message.fileAttachment.status)}
-                    </span>
-                  </>
-                )}
-                {message.fileAttachment.documentId && message.fileAttachment.status === 'PROCESSED' && (
-                  <a
-                    href={`/api/documents/download/${message.fileAttachment.documentId}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    style={{
-                      marginLeft: '0.5rem',
-                      color: 'var(--color-primary)',
-                      display: 'flex',
-                      alignItems: 'center'
-                    }}
-                  >
-                    <ArrowDownTrayIcon className="h-3 w-3 mr-1" />
-                    Download
-                  </a>
-                )}
-              </div>
-              {message.fileAttachment.processingError && (
-                <div style={{
-                  fontSize: '0.75rem',
-                  color: 'var(--color-error)',
-                  marginTop: '0.25rem'
-                }}>
-                  Error: {message.fileAttachment.processingError}
-                </div>
-              )}
-            </div>
-            {message.fileAttachment.url && (
-              <a
-                href={message.fileAttachment.url}
-                download={message.fileAttachment.name}
-                style={{
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  padding: '0.25rem',
-                  borderRadius: '0.25rem',
-                  color: 'var(--color-primary)',
-                  transition: 'all 0.2s ease',
-                  textDecoration: 'none'
-                }}
-                title="Download file"
-              >
-                <ArrowDownTrayIcon className="h-5 w-5" />
-              </a>
-            )}
-          </div>
-        )}
-
-        {isAI ? (
+        {!isAI ? (
+          // User message - just show the content
           <div style={{
             ...markdownStyles.container,
             fontSize: '0.95rem',
             lineHeight: '1.6',
           }}>
-            {(message.isStreaming || (message as any).isProcessingOnly) && (message.content === '' || (message as any).isLoadingOnly) ? (
-              // Show an animated loading indicator when streaming just started, processing documents, or for loading-only messages
-              <div style={{ color: 'var(--color-text-muted)' }}>
-                <div className="typing-animation">
-                  <span className="dot"></span>
-                  <span className="dot"></span>
-                  <span className="dot"></span>
-                </div>
-              </div>
-            ) : (
-              <ReactMarkdown
-                remarkPlugins={[remarkGfm]}
-                components={{
-                  ...components,
-                  // Add styling for other markdown elements
-                  p: ({node, children, ...props}) => (
-                    <p style={{marginTop: '0.75rem', marginBottom: '0.75rem'}} {...props}>
-                      {children}
-                    </p>
-                  ),
-                  h1: ({node, children, ...props}) => (
-                    <h1 style={{
-                      fontSize: '1.5rem',
-                      fontWeight: 600,
-                      marginTop: '1.5rem',
-                      marginBottom: '0.75rem',
-                      color: isDarkTheme ? 'var(--color-primary-light)' : 'var(--color-primary)'
-                    }} {...props}>
-                      {children}
-                    </h1>
-                  ),
-                  h2: ({node, children, ...props}) => (
-                    <h2 style={{
-                      fontSize: '1.3rem',
-                      fontWeight: 600,
-                      marginTop: '1.25rem',
-                      marginBottom: '0.75rem',
-                      color: isDarkTheme ? 'var(--color-primary-light)' : 'var(--color-primary)'
-                    }} {...props}>
-                      {children}
-                    </h2>
-                  ),
-                  h3: ({node, children, ...props}) => (
-                    <h3 style={{
-                      fontSize: '1.1rem',
-                      fontWeight: 600,
-                      marginTop: '1rem',
-                      marginBottom: '0.5rem',
-                      color: isDarkTheme ? 'var(--color-primary-light)' : 'var(--color-primary)'
-                    }} {...props}>
-                      {children}
-                    </h3>
-                  ),
-                  ul: ({node, children, ...props}) => (
-                    <ul style={{
-                      paddingLeft: '1.5rem',
-                      marginTop: '0.5rem',
-                      marginBottom: '0.5rem',
-                      listStyleType: 'disc'
-                    }} {...props}>
-                      {children}
-                    </ul>
-                  ),
-                  ol: ({node, children, ...props}) => (
-                    <ol style={{
-                      paddingLeft: '1.5rem',
-                      marginTop: '0.5rem',
-                      marginBottom: '0.5rem',
-                      listStyleType: 'decimal'
-                    }} {...props}>
-                      {children}
-                    </ol>
-                  ),
-                  li: ({node, children, ...props}) => (
-                    <li style={{
-                      marginTop: '0.25rem',
-                      marginBottom: '0.25rem'
-                    }} {...props}>
-                      {children}
-                    </li>
-                  ),
-                  a: ({node, children, ...props}) => (
-                    <a style={{
-                      color: 'var(--color-primary)',
-                      textDecoration: 'underline',
-                      fontWeight: 500
-                    }} {...props} target="_blank" rel="noopener noreferrer">
-                      {children}
-                    </a>
-                  ),
-                  blockquote: ({node, children, ...props}) => (
-                    <blockquote style={{
-                      borderLeft: `4px solid ${isDarkTheme ? 'var(--color-primary)' : 'var(--color-primary-light)'}`,
-                      paddingLeft: '1rem',
-                      margin: '1rem 0',
-                      color: 'var(--color-text-muted)',
-                      fontStyle: 'italic'
-                    }} {...props}>
-                      {children}
-                    </blockquote>
-                  ),
-                  table: ({node, children, ...props}) => (
-                    <div style={{ overflowX: 'auto', marginTop: '1rem', marginBottom: '1rem' }}>
-                      <table style={{
-                        borderCollapse: 'collapse',
-                        width: '100%',
-                        fontSize: '0.9rem',
-                      }} {...props}>
-                        {children}
-                      </table>
-                    </div>
-                  ),
-                  thead: ({node, children, ...props}) => (
-                    <thead style={{
-                      backgroundColor: isDarkTheme ? 'var(--color-surface-dark)' : 'var(--color-surface-light)',
-                      borderBottom: `2px solid ${isDarkTheme ? '#444' : '#e2e8f0'}`,
-                    }} {...props}>
-                      {children}
-                    </thead>
-                  ),
-                  tbody: ({node, children, ...props}) => (
-                    <tbody {...props}>
-                      {children}
-                    </tbody>
-                  ),
-                  tr: ({node, children, ...props}) => (
-                    <tr style={{
-                      borderBottom: `1px solid ${isDarkTheme ? '#333' : '#e2e8f0'}`,
-                    }} {...props}>
-                      {children}
-                    </tr>
-                  ),
-                  th: ({node, children, ...props}) => (
-                    <th style={{
-                      padding: '0.75rem',
-                      textAlign: 'left',
-                      fontWeight: 600,
-                      color: isDarkTheme ? 'var(--color-primary-light)' : 'var(--color-primary)',
-                    }} {...props}>
-                      {children}
-                    </th>
-                  ),
-                  td: ({node, children, ...props}) => (
-                    <td style={{
-                      padding: '0.75rem',
-                      borderRight: `1px solid ${isDarkTheme ? '#333' : '#e2e8f0'}`,
-                    }} {...props}>
-                      {children}
-                    </td>
-                  ),
-                }}
-              >
-                {message.content}
-              </ReactMarkdown>
-            )}
-          </div>
-        ) : (
-          <div style={{ whiteSpace: 'pre-wrap', wordBreak: 'break-word' }}>
             {message.content}
           </div>
-        )}
-
-        {/* Sources section for RAG responses */}
-        {isAI && message.sources && message.sources.length > 0 && (
+        ) : isSQLResponse ? (
+          // SQL response - show query and results
+          renderSQLResponse(message.content)
+        ) : isSystemMessage ? (
+          // Error or no results message
           <div style={{
-            marginTop: '0.75rem',
-            borderTop: `1px solid ${isDarkTheme ? '#444' : '#e2e8f0'}`,
-            paddingTop: '0.5rem'
+            color: message.content.startsWith('Error:') ? 'var(--color-error)' : 'var(--color-text)',
+            fontSize: '0.95rem',
+            lineHeight: '1.6',
           }}>
-            <button
-              onClick={() => setShowSources(!showSources)}
-              style={{
-                display: 'flex',
-                alignItems: 'center',
-                background: 'none',
-                border: 'none',
-                color: 'var(--color-primary)',
-                padding: '0.25rem 0',
-                fontSize: '0.85rem',
-                fontWeight: 500,
-                cursor: 'pointer'
-              }}
-            >
-              <InformationCircleIcon className="w-4 h-4 mr-1" />
-              {showSources ? 'Hide sources' : `Show sources (${message.sources.length})`}
-              {showSources ? <ChevronUpIcon className="w-3 h-3 ml-1" /> : <ChevronDownIcon className="w-3 h-3 ml-1" />}
-            </button>
-
-            {showSources && (
-              <div style={{
-                marginTop: '0.5rem',
-                fontSize: '0.85rem',
-                color: 'var(--color-text-muted)'
-              }}>
-                <div style={{ fontWeight: 500, marginBottom: '0.25rem' }}>Sources:</div>
-                <div style={{ maxHeight: '200px', overflowY: 'auto' }}>
-                  {message.sources.map((source, index) => (
-                    <div key={index} style={{
-                      padding: '0.5rem',
-                      marginBottom: '0.5rem',
-                      backgroundColor: isDarkTheme ? 'var(--color-surface-dark)' : 'var(--color-surface-light)',
-                      borderRadius: '0.25rem',
-                      fontSize: '0.8rem'
-                    }}>
-                      <div style={{ fontWeight: 500, marginBottom: '0.25rem' }}>
-                        {source.metadata.fileName || 'Document'}
-                        {source.score && (
-                          <span style={{
-                            marginLeft: '0.5rem',
-                            color: 'var(--color-success)',
-                            fontSize: '0.75rem'
-                          }}>
-                            {(source.score * 100).toFixed(1)}% match
-                          </span>
-                        )}
-                      </div>
-                      <div style={{
-                        whiteSpace: 'pre-wrap',
-                        wordBreak: 'break-word',
-                        color: isDarkTheme ? '#ccc' : '#555'
-                      }}>
-                        {source.text}
-                      </div>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
+            {message.content}
           </div>
-        )}
+        ) : null}
       </div>
 
       {/* Add CSS for animations */}

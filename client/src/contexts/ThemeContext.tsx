@@ -4,14 +4,16 @@ type ThemeType = 'dark' | 'light' | 'midnight';
 
 interface ThemeContextType {
   currentTheme: ThemeType;
+  isDarkTheme: boolean;
+  toggleTheme: () => void;
   setTheme: (theme: ThemeType) => void;
-  isDark: boolean;
 }
 
 const ThemeContext = createContext<ThemeContextType>({
   currentTheme: 'dark',
+  isDarkTheme: true,
+  toggleTheme: () => {},
   setTheme: () => {},
-  isDark: true,
 });
 
 export const useTheme = () => useContext(ThemeContext);
@@ -144,14 +146,23 @@ export const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
 
   const setTheme = (theme: ThemeType) => {
     setCurrentTheme(theme);
+    localStorage.setItem('theme', theme);
   };
+
+  const toggleTheme = () => {
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    setTheme(newTheme);
+  };
+
+  const isDarkTheme = currentTheme !== 'light';
 
   return (
     <ThemeContext.Provider 
       value={{ 
         currentTheme, 
-        setTheme,
-        isDark: currentTheme !== 'light'
+        isDarkTheme,
+        toggleTheme,
+        setTheme
       }}
     >
       {children}
