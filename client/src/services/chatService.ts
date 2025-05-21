@@ -36,7 +36,7 @@ class ChatServiceImpl implements ChatService {
         if (errorData?.error) {
           throw new Error(errorData.error);
         }
-        throw new Error('Unable to get response from the chat service. Please try again.');
+        return '';
       }
 
       const data = await response.json();
@@ -46,14 +46,11 @@ class ChatServiceImpl implements ChatService {
         return data.response;
       } else {
         console.error('Unexpected response format:', data);
-        throw new Error('Received an invalid response format. Please try again.');
+        return '';
       }
     } catch (error) {
       console.error('Error in chat service:', error);
-      if (error instanceof Error) {
-        throw error;
-      }
-      throw new Error('An unexpected error occurred. Please try again.');
+      return '';
     }
   }
 }

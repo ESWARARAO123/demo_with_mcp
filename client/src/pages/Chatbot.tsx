@@ -87,11 +87,7 @@ const Chatbot: React.FC = () => {
 
   // RAG state
   const [isRagAvailable, setIsRagAvailable] = useState<boolean>(false);
-  const [isRagEnabled, setIsRagEnabled] = useState<boolean>(() => {
-    // Get from localStorage or default to true
-    const savedPreference = localStorage.getItem('ragEnabled');
-    return savedPreference !== null ? savedPreference === 'true' : true;
-  });
+  const [isRagEnabled, setIsRagEnabled] = useState<boolean>(false); // Always start with RAG disabled
   // Track if we've already shown a RAG notification for the current document
   const [ragNotificationShown, setRagNotificationShown] = useState<boolean>(false);
 
@@ -142,7 +138,7 @@ const Chatbot: React.FC = () => {
                 const successMessage: ExtendedChatMessageType = {
                   id: `system-success-${Date.now()}`,
                   role: 'assistant',
-                  content: "Your document has been fully processed and is ready for questions! You can now ask me anything about the content, and I'll use the document to provide accurate answers.",
+                  content: "Your document has been processed successfully. You can now enable RAG mode to ask questions about the content.",
                   timestamp: new Date()
                 };
 
@@ -159,9 +155,9 @@ const Chatbot: React.FC = () => {
               setIsLoading(false);
               setIsStreaming(false);
 
-              // Enable RAG mode automatically
-              setIsRagEnabled(true);
-              localStorage.setItem('ragEnabled', 'true');
+              // Don't automatically enable RAG mode
+              // setIsRagEnabled(true);
+              // localStorage.setItem('ragEnabled', 'true');
             } else if (statusResponse.status === 'ERROR') {
               // Handle error
               console.log('Document processing error, updating UI');
@@ -311,8 +307,10 @@ const Chatbot: React.FC = () => {
       const available = await ragChatService.isRagAvailable();
       console.log(`RAG availability checked: ${available ? 'Available' : 'Not available'} at ${new Date().toISOString()}`);
 
-      // If RAG is now available but wasn't before, show a notification (only once)
-      if (available && !isRagAvailable && !ragNotificationShown) {
+      // Only show notification if RAG is available and we have a document being processed
+      const hasProcessingDocument = messages.some(msg => msg.isProcessingFile);
+      
+      if (available && !isRagAvailable && !ragNotificationShown && hasProcessingDocument) {
         console.log('RAG is now available, showing notification (first time)');
 
         // Find and remove any processing messages
@@ -365,7 +363,7 @@ const Chatbot: React.FC = () => {
           const ragAvailableMessage: ExtendedChatMessageType = {
             id: `system-rag-available-${Date.now()}`,
             role: 'assistant',
-            content: "Your document has been fully processed and is ready for questions! You can now ask me anything about the content, and I'll use the document to provide accurate answers.",
+            content: "Your document has been processed successfully. You can now enable RAG mode to ask questions about the content.",
             timestamp: new Date()
           };
 
@@ -377,16 +375,6 @@ const Chatbot: React.FC = () => {
         setRagNotificationShown(true);
 
         // Reset loading and streaming states
-        setIsLoading(false);
-        setIsStreaming(false);
-
-        // Enable RAG mode automatically
-        setIsRagEnabled(true);
-        localStorage.setItem('ragEnabled', 'true');
-      } else if (available && !isRagAvailable && ragNotificationShown) {
-        console.log('RAG is now available, but notification already shown');
-
-        // Still make sure loading states are reset
         setIsLoading(false);
         setIsStreaming(false);
       }
@@ -548,7 +536,10 @@ const Chatbot: React.FC = () => {
       } : undefined
     };
 
-    setMessages(prev => [...prev, userMessage]);
+    // Only add the user message if it's not a file upload
+    if (!file) {
+      setMessages(prev => [...prev, userMessage]);
+    }
 
     // Handle file upload if a file is provided
     if (file) {
@@ -738,7 +729,7 @@ const Chatbot: React.FC = () => {
                   const successMessage: ExtendedChatMessageType = {
                     id: `system-success-${Date.now()}`,
                     role: 'assistant',
-                    content: "Your document has been fully processed and is ready for questions! You can now ask me anything about the content, and I'll use the document to provide accurate answers.",
+                    content: "Your document has been processed successfully. You can now enable RAG mode to ask questions about the content.",
                     timestamp: new Date()
                   };
 
@@ -766,12 +757,6 @@ const Chatbot: React.FC = () => {
                   }, 5000);
                 }
               });
-
-              // Enable RAG mode automatically when a document is processed
-              if (!isRagEnabled) {
-                setIsRagEnabled(true);
-                localStorage.setItem('ragEnabled', 'true');
-              }
 
               // Reset both loading and streaming states
               setIsLoading(false);
@@ -924,7 +909,7 @@ const Chatbot: React.FC = () => {
                   const successMessage: ExtendedChatMessageType = {
                     id: `system-success-${Date.now()}`,
                     role: 'assistant',
-                    content: "Your document has been fully processed and is ready for questions! You can now ask me anything about the content, and I'll use the document to provide accurate answers.",
+                    content: "Your document has been processed successfully. You can now enable RAG mode to ask questions about the content.",
                     timestamp: new Date()
                   };
 
@@ -945,7 +930,6 @@ const Chatbot: React.FC = () => {
 
               // Enable RAG mode automatically
               setIsRagEnabled(true);
-              localStorage.setItem('ragEnabled', 'true');
             }
           }, [documentStatus, documentId, pollingMessageId, usingWebSocket]);
         } else {
@@ -975,212 +959,199 @@ const Chatbot: React.FC = () => {
 
         return;
       }
-    }
+    } else {
+      // Regular message without file
+      setIsLoading(true);
 
-    // Regular message without file
-    setIsLoading(true);
+      try {
+        if (selectedModelId) {
+          const modelsResponse = await getActiveOllamaModels();
+          const selectedModel = modelsResponse.find(model => model.id === selectedModelId);
 
-    try {
-      if (selectedModelId) {
-        const modelsResponse = await getActiveOllamaModels();
-        const selectedModel = modelsResponse.find(model => model.id === selectedModelId);
-
-        if (!selectedModel) {
-          throw new Error('Selected model not found');
-        }
-
-        // Check if we should use RAG for this message
-        // Only use RAG if it's available, enabled, and there are documents to search
-        const shouldUseRag = isRagAvailable && isRagEnabled;
-
-        // Create a temporary AI message for streaming
-        const aiMessageId = `ai-${Date.now()}`;
-        const aiMessage: ExtendedChatMessageType = {
-          id: aiMessageId,
-          role: 'assistant',
-          content: '',
-          timestamp: new Date(),
-          isStreaming: true, // Mark as streaming to show the loading indicator
-          useRag: shouldUseRag // Mark if we're using RAG
-        };
-
-        // Add the message to the UI immediately to show streaming
-        setMessages(prev => [...prev, aiMessage]);
-        setIsStreaming(true);
-
-        // If RAG is available and enabled, use it
-        if (shouldUseRag) {
-          try {
-            console.log('Using RAG for this message');
-
-            // Call the RAG service
-            const ragResponse = await ragChatService.sendRagChatMessage({
-              model: selectedModel.ollama_model_id,
-              message: content.trim(),
-              sessionId: activeSessionId || undefined
-            });
-
-            // Update the message with the RAG response
-            setMessages(prev => prev.map(msg =>
-              msg.id === aiMessageId ? {
-                ...msg,
-                content: ragResponse.content,
-                sources: ragResponse.sources,
-                isStreaming: false
-              } : msg
-            ));
-
-            // Save the message to the database
-            const dbResponse = await chatbotService.sendMessage(
-              content.trim(),
-              activeSessionId || undefined,
-              ragResponse.content
-            );
-
-            if (!activeSessionId || activeSessionId !== dbResponse.sessionId) {
-              setActiveSessionId(dbResponse.sessionId);
-              await fetchSessions();
-            }
-
-            setIsLoading(false);
-            setIsStreaming(false);
-            return;
-          } catch (ragError) {
-            console.error('Error using RAG:', ragError);
-            // Fall back to regular chat if RAG fails
-            console.log('Falling back to regular chat');
-
-            // Update the message to indicate RAG failed
-            setMessages(prev => prev.map(msg =>
-              msg.id === aiMessageId ? {
-                ...msg,
-                content: 'RAG processing failed, falling back to regular chat...',
-                useRag: false
-              } : msg
-            ));
+          if (!selectedModel) {
+            throw new Error('Selected model not found');
           }
-        }
 
-        // If we get here, either RAG is not available/enabled or it failed
-        // Use regular chat with conversation history
-        const conversationHistory = messages
-          .filter(msg => msg.role !== 'system') // Filter out system messages
-          .map(msg => ({
-            role: msg.role as 'user' | 'assistant',
-            content: msg.content
-          }));
+          // Check if we should use RAG for this message
+          const shouldUseRag = isRagAvailable && isRagEnabled;
 
-        // Add the current message
-        conversationHistory.push({ role: 'user', content: content.trim() });
+          // Create a temporary AI message for streaming
+          const aiMessageId = `ai-${Date.now()}`;
+          const aiMessage: ExtendedChatMessageType = {
+            id: aiMessageId,
+            role: 'assistant',
+            content: '',
+            timestamp: new Date(),
+            isStreaming: true,
+            useRag: shouldUseRag
+          };
 
-        // Set isLoading and isStreaming to true to indicate we're waiting for a response
-        // The MessageList component will not show a separate loading indicator
-        // when there's already a message with isStreaming=true
-        setIsStreaming(true);
+          // Add the message to the UI immediately to show streaming
+          setMessages(prev => [...prev, aiMessage]);
+          setIsStreaming(true);
 
-        // Store the abort function so we can call it if the user clicks the stop button
-        abortFunctionRef.current = await aiChatService.streamChatCompletion(
-          {
-            modelId: selectedModel.ollama_model_id,
-            messages: conversationHistory,
-            options: { stream: true }
-          },
-          (chunk: StreamChunk) => {
-            const newContent = chunk.choices?.[0]?.delta?.content || chunk.choices?.[0]?.message?.content || '';
-            if (newContent) {
-              // Update the ref with the accumulated content
-              streamedContentRef.current[aiMessageId] = (streamedContentRef.current[aiMessageId] || '') + newContent;
+          try {
+            // If RAG is available and enabled, use it
+            if (shouldUseRag) {
+              const ragResponse = await ragChatService.sendRagChatMessage({
+                model: selectedModel.ollama_model_id,
+                message: content.trim(),
+                sessionId: activeSessionId || undefined
+              });
 
-              // Update the UI
+              // Update the message with the RAG response
               setMessages(prev => prev.map(msg =>
-                msg.id === aiMessageId ? { ...msg, content: streamedContentRef.current[aiMessageId] } : msg
+                msg.id === aiMessageId ? {
+                  ...msg,
+                  content: ragResponse.content,
+                  sources: ragResponse.sources,
+                  isStreaming: false
+                } : msg
               ));
-            }
-          },
-          async () => {
-            console.log('Preparing to get final AI message content');
-            console.log('Checking content length');
-
-            // Add a small delay to ensure all content is accumulated
-            // This helps with race conditions in state updates
-            await new Promise(resolve => setTimeout(resolve, 500));
-
-            try {
-              // Double-check the final content after the delay
-              const finalContentAfterDelay = streamedContentRef.current[aiMessageId] || '';
-              console.log('Final content after delay:', finalContentAfterDelay.length);
 
               // Save the message to the database
               const dbResponse = await chatbotService.sendMessage(
                 content.trim(),
                 activeSessionId || undefined,
-                finalContentAfterDelay
+                ragResponse.content
               );
-              console.log('Database response:', dbResponse); // Debug: Log response
 
               if (!activeSessionId || activeSessionId !== dbResponse.sessionId) {
                 setActiveSessionId(dbResponse.sessionId);
                 await fetchSessions();
               }
 
-              // Update the existing message with the database ID instead of adding a new one
-              setMessages(prev => {
-                console.log('Updating message with DB ID:', dbResponse.id);
-                return prev.map(msg =>
-                  msg.id === aiMessageId ? {
-                    ...msg,
-                    id: dbResponse.id,
-                    isStreaming: false,
-                    // Ensure the content is the final content
-                    content: finalContentAfterDelay
-                  } : msg
-                );
-              });
-
-              // Clean up the ref
-              delete streamedContentRef.current[aiMessageId];
-            } catch (error) {
-              console.error('Error saving message to database:', error);
-              // Still mark the message as not streaming even if saving fails
-              setMessages(prev => prev.map(msg =>
-                msg.id === aiMessageId ? { ...msg, isStreaming: false } : msg
-              ));
-
-              // Clean up the ref even on error
-              delete streamedContentRef.current[aiMessageId];
+              setIsLoading(false);
+              setIsStreaming(false);
+              return;
             }
 
-            setIsLoading(false);
-            setIsStreaming(false);
-            abortFunctionRef.current = null;
-          },
-          (error) => {
-            console.error('Streaming error:', error);
+            // Use regular chat with conversation history
+            const conversationHistory = messages
+              .filter(msg => msg.role !== 'system')
+              .map(msg => ({
+                role: msg.role as 'user' | 'assistant',
+                content: msg.content
+              }));
+
+            // Add the current message
+            conversationHistory.push({ role: 'user', content: content.trim() });
+
+            // Stream the response
+            abortFunctionRef.current = await aiChatService.streamChatCompletion(
+              {
+                modelId: selectedModel.ollama_model_id,
+                messages: conversationHistory,
+                options: { stream: true }
+              },
+              (chunk: StreamChunk) => {
+                const newContent = chunk.choices?.[0]?.delta?.content || chunk.choices?.[0]?.message?.content || '';
+                if (newContent) {
+                  streamedContentRef.current[aiMessageId] = (streamedContentRef.current[aiMessageId] || '') + newContent;
+                  setMessages(prev => prev.map(msg =>
+                    msg.id === aiMessageId ? { ...msg, content: streamedContentRef.current[aiMessageId] } : msg
+                  ));
+                }
+              },
+              async () => {
+                const finalContent = streamedContentRef.current[aiMessageId] || '';
+                try {
+                  const dbResponse = await chatbotService.sendMessage(
+                    content.trim(),
+                    activeSessionId || undefined,
+                    finalContent
+                  );
+
+                  setMessages(prev => prev.map(msg =>
+                    msg.id === aiMessageId ? {
+                      ...msg,
+                      id: dbResponse.id,
+                      isStreaming: false,
+                      content: finalContent
+                    } : msg
+                  ));
+
+                  if (!activeSessionId || activeSessionId !== dbResponse.sessionId) {
+                    setActiveSessionId(dbResponse.sessionId);
+                    await fetchSessions();
+                  }
+                } catch (error) {
+                  console.error('Error saving message to database:', error);
+                  setMessages(prev => prev.filter(msg => msg.id !== aiMessageId));
+                }
+
+                delete streamedContentRef.current[aiMessageId];
+                setIsLoading(false);
+                setIsStreaming(false);
+                abortFunctionRef.current = null;
+              },
+              (error) => {
+                console.error('Streaming error:', error);
+                setMessages(prev => prev.filter(msg => msg.id !== aiMessageId));
+                setIsLoading(false);
+                setIsStreaming(false);
+                abortFunctionRef.current = null;
+              }
+            );
+          } catch (error) {
+            console.error('Error in chat processing:', error);
             setMessages(prev => prev.filter(msg => msg.id !== aiMessageId));
-            // Clean up the ref on error
-            delete streamedContentRef.current[aiMessageId];
             setIsLoading(false);
             setIsStreaming(false);
-            abortFunctionRef.current = null;
           }
-        );
-      } else {
-        const response = await chatbotService.sendMessage(userMessage.content, activeSessionId || undefined);
-        setActiveSessionId(response.sessionId);
-        setMessages(prev => {
-          const filteredMessages = prev.filter(m => m.id !== tempId);
-          return [
-            ...filteredMessages,
-            { ...userMessage, id: `user-${Date.now()}` },
-            { id: response.id, role: 'assistant', content: response.content, timestamp: new Date() }
-          ];
-        });
-        await fetchSessions();
+        } else {
+          try {
+            // For chat2sql mode, only show the user's question and data results
+            const response = await chatbotService.sendMessage(content.trim(), activeSessionId || undefined);
+            setActiveSessionId(response.sessionId);
+            setMessages(prev => {
+              const filteredMessages = prev.filter(m => m.id !== tempId);
+              
+              // Extract the SQL query and results
+              const contentLines = response.content.split('\n');
+              let sqlQuery = '';
+              let results = '';
+              
+              // Find the SQL query and results
+              for (let i = 0; i < contentLines.length; i++) {
+                const line = contentLines[i];
+                if (line.includes('```sql')) {
+                  // Get the SQL query
+                  sqlQuery = contentLines[i + 1]?.trim() || '';
+                  // Get the results (next line after SQL)
+                  results = contentLines[i + 2]?.trim() || '';
+                  break;
+                }
+              }
+              
+              // Format the response for AI side
+              const aiResponse = sqlQuery && results ? 
+                `SQL Query:\n${sqlQuery}\n\nResults:\n${results}` : 
+                response.content;
+              
+              return [
+                ...filteredMessages,
+                { ...userMessage, id: response.id },
+                { 
+                  id: `assistant-${response.id}`, 
+                  role: 'assistant', 
+                  content: aiResponse,
+                  timestamp: new Date() 
+                }
+              ];
+            });
+            await fetchSessions();
+          } catch (error) {
+            console.error('Error sending message:', error);
+            setMessages(prev => prev.filter(m => m.id !== tempId));
+            setIsLoading(false);
+          }
+        }
+      } catch (error) {
+        console.error('Error sending message:', error);
+        setMessages(prev => prev.filter(m => m.id !== tempId));
+        setIsLoading(false);
       }
-    } catch (error) {
-      console.error('Error sending message:', error);
-      setMessages(prev => prev.filter(m => m.id !== tempId));
-      setIsLoading(false);
     }
   };
 
@@ -1303,14 +1274,8 @@ const Chatbot: React.FC = () => {
               abortFunctionRef.current = null;
             } catch (error) {
               console.error('Error saving message to database:', error);
-
-              // Still mark as not streaming
-              setMessages(prev => prev.map(msg =>
-                msg.id === aiMessageId ? { ...msg, isStreaming: false } : msg
-              ));
-
-              // Clean up
-              delete streamedContentRef.current[aiMessageId];
+              // Only remove the streaming message without adding an error message
+              setMessages(prev => prev.filter(msg => msg.id !== aiMessageId));
               setIsLoading(false);
               abortFunctionRef.current = null;
             }
@@ -1318,23 +1283,8 @@ const Chatbot: React.FC = () => {
           (error) => {
             // This is called on error
             console.error('Streaming error:', error);
-
-            // Show error message
-            setMessages(prev => {
-              const filteredMessages = prev.filter(msg => msg.id !== aiMessageId);
-              return [
-                ...filteredMessages,
-                {
-                  id: `error-${Date.now()}`,
-                  role: 'assistant',
-                  content: 'Sorry, there was an error generating a response. Please try again.',
-                  timestamp: new Date(),
-                }
-              ];
-            });
-
-            // Clean up
-            delete streamedContentRef.current[aiMessageId];
+            // Only remove the streaming message without adding an error message
+            setMessages(prev => prev.filter(msg => msg.id !== aiMessageId));
             setIsLoading(false);
             setIsStreaming(false);
             abortFunctionRef.current = null;
@@ -1345,17 +1295,8 @@ const Chatbot: React.FC = () => {
       }
     } catch (error) {
       console.error('Error in AI response:', error);
-
-      setMessages(prev => [
-        ...prev,
-        {
-          id: `error-${Date.now()}`,
-          role: 'assistant',
-          content: 'Sorry, there was an error generating a response. Please try again.',
-          timestamp: new Date(),
-        }
-      ]);
-
+      // Only remove any temporary messages without adding an error message
+      setMessages(prev => prev.filter(msg => !msg.isStreaming));
       setIsLoading(false);
       setIsStreaming(false);
     }
@@ -1378,11 +1319,9 @@ const Chatbot: React.FC = () => {
 
   // Toggle RAG mode
   const toggleRagMode = () => {
-    setIsRagEnabled(prev => {
-      const newValue = !prev;
-      localStorage.setItem('ragEnabled', String(newValue));
-      return newValue;
-    });
+    const newRagEnabled = !isRagEnabled;
+    setIsRagEnabled(newRagEnabled);
+    // Don't persist RAG state in localStorage to match Chat2SQL behavior
   };
 
   const isEmpty = messages.length === 0;
@@ -1548,7 +1487,7 @@ const Chatbot: React.FC = () => {
         )}
 
         <div
-          className={`absolute inset-0 transition-all duration-300 ease-in-out flex flex-col`}
+          className="absolute inset-0 transition-all duration-300 ease-in-out flex flex-col"
           style={{
             backgroundColor: 'var(--color-bg)',
             marginLeft: showSidebar ? (window.innerWidth < 768 ? '0' : '260px') : '0'
