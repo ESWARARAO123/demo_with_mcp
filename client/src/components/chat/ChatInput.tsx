@@ -95,32 +95,6 @@ const ChatInput: React.FC<ChatInputProps> = ({
     setSelectedFile(null);
   };
 
-  const formatSQLResponse = (result: any) => {
-    // Format SQL query in a code block
-    const sqlBox = `SQL Query:\n\`\`\`sql\n${result.sql}\n\`\`\``;
-    
-    // Format results in a table
-    let resultsBox = '';
-    if (result.data && result.data.length > 0) {
-      // Create a markdown table
-      const header = result.columns.join(" | ");
-      const separator = result.columns.map(() => "---").join(" | ");
-      const rows = result.data
-        .map((row: any) => result.columns.map(col => {
-          const value = row[col];
-          return value === null ? 'NULL' : String(value).replace(/\|/g, '\\|');
-        }).join(" | "))
-        .join("\n");
-      
-      resultsBox = `Query Results:\n\`\`\`\n${header}\n${separator}\n${rows}\n\`\`\``;
-    } else {
-      resultsBox = "No results found.";
-    }
-    
-    // Combine both boxes with a separator
-    return `${sqlBox}\n\n${resultsBox}`;
-  };
-
   const handleSend = async () => {
     if (!input.trim()) return;
     
@@ -129,48 +103,53 @@ const ChatInput: React.FC<ChatInputProps> = ({
       try {
         // Send user's message first (this will appear on the right)
         const userMessage = input.trim();
-        // Send only the user's question, not the SQL query
         onSendMessage(userMessage, undefined, false);
         
         // Execute the query through the API endpoint
         const result = await chat2sqlService.executeQuery(userMessage);
         
-        if (result.sql && result.data) {
-          // Format the SQL response with just the query and table data
-          const formattedMessage = `\`\`\`sql\n${result.sql}\n\`\`\`\n\n${formatTableData(result.columns, result.data)}`;
+        // Only show the raw data from the server, no explanations
+        if (result.data && result.data.length > 0) {
+          // Get column names from the first row
+          const columns = Object.keys(result.data[0]);
+          
+          // Create header row
+          const header = columns.join('\t');
+          
+          // Create data rows
+          const rows = result.data.map((row: any) => 
+            columns.map(col => row[col]).join('\t')
+          ).join('\n');
+          
+          // Combine header and rows - just the data, no explanations
+          const formattedMessage = `${header}\n${rows}`;
           onSendMessage(formattedMessage, undefined, true);
         } else if (result.detail) {
-          // If there's an error message from the API, show it
+          // For errors, just show the error message without explanation
           onSendMessage(result.detail, undefined, true);
         } else {
-          // If no data and no error message, show just the query
-          const noResultsMessage = `\`\`\`sql\n${result.sql}\n\`\`\`\n\nNo results found`;
-          onSendMessage(noResultsMessage, undefined, true);
+          // For no results, just show the message without explanation
+          onSendMessage("No results found", undefined, true);
         }
       } catch (err) {
-        // On error, show the error message
+        // For errors, just show the error message without explanation
         const errorMessage = err instanceof Error ? err.message : String(err);
         onSendMessage(errorMessage, undefined, true);
       } finally {
         setLoading(false);
       }
     } else {
-      // Regular chat mode - use chat service
+      // Regular chat mode - use chat service with AI responses
       setLoading(true);
       const userMessage = input.trim();
-      
-      // Send user's message (will appear on the right)
       onSendMessage(userMessage, undefined, false);
       
       try {
-        // Get response from chat service
         const response = await chatService.sendMessage(userMessage);
-        // Send the response as a system message (will appear on the left)
+        // In regular chat mode, we want AI responses
         onSendMessage(response, undefined, true);
       } catch (err) {
-        // On error, show the error message as a system message (will appear on the left)
         const errorMessage = err instanceof Error ? err.message : String(err);
-        // Send error message as a system message (AI side)
         onSendMessage(errorMessage, undefined, true);
       } finally {
         setLoading(false);

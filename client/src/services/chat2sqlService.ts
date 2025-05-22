@@ -1,7 +1,6 @@
 import { config } from '../config';
 
 interface Chat2SQLResponse {
-  sql: string;
   data: any[];
   columns: string[];
   detail?: string;
@@ -38,7 +37,12 @@ export const chat2sqlService = {
         throw new Error('Invalid response format from server');
       }
       
-      return data;
+      // Return only the raw data without any processing
+      return {
+        data: data.data,
+        columns: data.columns,
+        detail: data.detail
+      };
     } catch (error) {
       console.error('Error executing query:', error);
       if (error instanceof TypeError && error.message.includes('Failed to fetch')) {

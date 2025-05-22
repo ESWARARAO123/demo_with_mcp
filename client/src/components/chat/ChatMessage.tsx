@@ -51,7 +51,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
   };
 
   // Determine if this is a system message (from Chat2SQL)
-  const isSystemMessage = message.content.includes('```sql') || message.content.startsWith('Error:') || message.content === 'No results found';
+  const isSystemMessage = message.content.includes('\t') || message.content.startsWith('Error:') || message.content === 'No results found';
 
   // Determine if this is a SQL response
   const isSQLResponse = message.content.includes('```sql');
@@ -390,7 +390,7 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
       <div style={isAI ? messageBubbleStyles.ai.header : messageBubbleStyles.user.header}>
         {isAI ? (
           <div style={messageBubbleStyles.ai.avatar}>
-            {isSQLResponse ? 'SQL' : isSystemMessage ? 'AI' : 'AI'}
+            {isSystemMessage ? 'DB' : 'AI'}
           </div>
         ) : (
           <div style={messageBubbleStyles.user.avatar}>
@@ -412,22 +412,42 @@ const ChatMessage: React.FC<ChatMessageProps> = ({ message, isAI = false }) => {
           }}>
             {message.content}
           </div>
-        ) : isSQLResponse ? (
-          // SQL response - show query and results
-          renderSQLResponse(message.content)
+        ) : isSystemMessage ? (
+          // System message (from Chat2SQL) - show as raw table without any additional text
+          <div style={{ padding: '1rem', overflowX: 'auto' }}>
+            <table style={{
+              width: '100%',
+              borderCollapse: 'collapse',
+              fontSize: '0.9rem',
+              backgroundColor: isDarkTheme ? '#1e1e1e' : '#ffffff'
+            }}>
+              <tbody>
+                {message.content.split('\n').map((row, rowIndex) => (
+                  <tr key={rowIndex}>
+                    {row.split('\t').map((cell, cellIndex) => (
+                      <td key={cellIndex} style={{
+                        padding: '0.75rem',
+                        borderBottom: `1px solid ${isDarkTheme ? '#3E3E42' : '#e2e8f0'}`,
+                        color: isDarkTheme ? '#e6e6e6' : '#334155',
+                        whiteSpace: 'nowrap'
+                      }}>
+                        {cell}
+                      </td>
+                    ))}
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
         ) : (
-          // Regular AI response or error message
-          <div style={{
-            color: message.content.startsWith('Error:') ? 'var(--color-error)' : 'var(--color-text)',
-            fontSize: '0.95rem',
-            lineHeight: '1.6',
-            backgroundColor: message.content.startsWith('Error:') ? 
-              (isDarkTheme ? 'rgba(255, 0, 0, 0.1)' : 'rgba(255, 0, 0, 0.05)') : 
-              'transparent',
-            padding: message.content.startsWith('Error:') ? '0.5rem' : '0',
-            borderRadius: message.content.startsWith('Error:') ? '0.5rem' : '0',
-          }}>
-            {message.content}
+          // AI message - show with markdown formatting
+          <div style={markdownStyles.container}>
+            <ReactMarkdown
+              remarkPlugins={[remarkGfm]}
+              components={components}
+            >
+              {message.content}
+            </ReactMarkdown>
           </div>
         )}
       </div>

@@ -11,7 +11,7 @@ import { RagSource } from '../../services/ragChatService';
 interface MessageListProps {
   messages: {
     id: string;
-    role: 'user' | 'assistant';
+    role: 'user' | 'assistant' | 'system';
     content: string;
     timestamp: Date;
     isStreaming?: boolean;
@@ -153,7 +153,7 @@ const MessageList: React.FC<MessageListProps> = ({
               >
                 <ChatMessage
                   message={message}
-                  isAI={group.role === 'assistant'}
+                  isAI={message.role === 'assistant' || message.role === 'system'}
                 />
               </div>
             ))}
